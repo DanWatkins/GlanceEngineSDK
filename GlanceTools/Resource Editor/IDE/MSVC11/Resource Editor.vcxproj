@@ -45,8 +45,8 @@
     <OutDir>..\..\..\..\Bin\Bin32\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostC++;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Dev\Projects\BoostC++\stage\lib;C:\Dev\Projects\SFML\SFML-1.6 - VC2012\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostCpp;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Projects\BoostCpp\stage\lib;C:\Dev\Projects\SFML\SFML-1.6 - VC2012\lib;$(LibraryPath)</LibraryPath>
     <TargetName>$(ProjectName)-msvc11-d</TargetName>
     <ExtensionsToDeleteOnClean>*.Build</ExtensionsToDeleteOnClean>
   </PropertyGroup>
@@ -54,8 +54,8 @@
     <OutDir>..\..\..\..\Bin\Bin32\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostC++;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Dev\Projects\BoostC++\stage\lib;C:\Dev\Projects\SFML\SFML-1.6 - VC2012\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostCpp;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Projects\BoostCpp\stage\lib;C:\Dev\Projects\SFML\SFML-1.6 - VC2012\lib;$(LibraryPath)</LibraryPath>
     <TargetName>$(ProjectName)-msvc11</TargetName>
     <ExtensionsToDeleteOnClean>*.Build</ExtensionsToDeleteOnClean>
   </PropertyGroup>

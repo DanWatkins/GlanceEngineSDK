@@ -43,16 +43,16 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>..\..\..\..\Lib\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
-    <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostC++;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Dev\Projects\BoostC++\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostCpp;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Projects\BoostCpp\stage\lib;$(LibraryPath)</LibraryPath>
     <TargetName>$(ProjectName)-d</TargetName>
     <ExtensionsToDeleteOnClean>*.Build</ExtensionsToDeleteOnClean>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>..\..\..\..\Lib\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
-    <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostC++;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Dev\Projects\BoostC++\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostCpp;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Projects\BoostCpp\stage\lib;$(LibraryPath)</LibraryPath>
     <ExtensionsToDeleteOnClean>*.Build</ExtensionsToDeleteOnClean>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
