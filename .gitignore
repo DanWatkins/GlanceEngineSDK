@@ -2,8 +2,6 @@
 *.lib
 *.Build
 *.CppClean
-*.v11
-*.suo
 
 
 #################
