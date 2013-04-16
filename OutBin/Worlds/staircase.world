@@ -1,0 +1,68 @@
+<entity>
+  #make halbadier (50,20,8) A001
+
+  
+  
+  #make wall_floor_tile (-64,-64,0) A
+  #make wall_floor_tile (-64,0,0) A
+  #make wall_floor_tile (-64,64,0) A
+  
+  #make wall_floor_tile (0,-64,0) A
+  #make wall_floor_tile (0,0,0) A
+  #make wall_floor_tile (0,64,0) A
+  
+  #make wall_floor_tile (64,-64,0) A
+  #make wall_floor_tile (64,0,0) A
+  #make wall_floor_tile (64,64,0) A
+  
+  #make wall_floor_tile (128,-64,0) A
+  #make wall_floor_tile (128,0,0) A
+  #make wall_floor_tile (128,64,0) A
+  
+  
+  
+  #make wall_floor_tile (-64,-128,0) A
+  #make wall_floor_tile (0,-128,0) A
+  #make wall_floor_tile (64,-128,0) A
+  #make wall_floor_tile (128,-128,0) A
+  
+  
+  
+  #make wall_floor_tile (64,0,0) A
+  #make wall_floor_block (80,0,16) A
+  #make wall_floor_block (96,0,32) A
+  #make wall_floor_block (112,0,48) A
+  #make wall_floor (176,0,48) A
+  #make wall_floor (240,0,48) A
+  #make wall_floor (240,-64,48) A
+  #make wall_floor (240,-128,48) A
+  #make wall_floor (304,-128,48) A
+  #make wall_floor_block (336,-128,64) A
+  #make wall_floor_block (368,-128,80) A
+  #make wall_floor_block (400,-128,96) A
+  #make wall_floor (464,-128,96) A
+  
+  #make wall_floor (528,-128,96) A
+  #make wall_floor (528,-192,96) A
+  #make wall_floor (528,-256,96) A
+  #make wall_floor (592,-128,96) A
+  #make wall_floor (592,-192,96) A
+  #make wall_floor (592,-256,96) A
+  #make wall_floor (656,-128,96) A
+  #make wall_floor (656,-192,96) A
+  #make wall_floor (656,-256,96) A
+  
+  #make palm_tree (645,-190,96) A
+
+
+  #set player A001
+</entity>
+
+<map>
+   #dimensions (0,0)
+   #tileset default.ts
+   
+	<layer1>
+  </layer1>
+	
+</map>

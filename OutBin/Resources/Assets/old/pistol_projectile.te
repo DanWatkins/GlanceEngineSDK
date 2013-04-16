@@ -1,0 +1,19 @@
+<header>
+   #name pistol_projectile
+   #type OBJECT
+   #displayName Pistol_Projectile
+</header>
+
+<world>
+   #body BOX (0,0,0) 2 2 2
+</world>
+
+<object>
+   #obtainable false
+   #objectType STATIC
+   #combined true
+</object>
+
+<graphics>
+   #mapImage pistol_projectile.bmp
+</graphics>

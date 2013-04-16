@@ -1,0 +1,22 @@
+<header>
+   #name wall_horizontal_quarter
+   #type OBJECT
+   #displayName Wall
+</header>
+
+<world>
+   #body BOX (0,64,0) 16 16 64
+   #respondsToGravity false
+</world>
+
+<object>
+   #obtainable false
+   #objectType STATIC
+   #combined true
+</object>
+
+<graphics>
+   <animations>
+      #add standing wall_horizontal_quarter.as
+   </animations>
+</graphics>

@@ -1,0 +1,22 @@
+<header>
+   #name wall_floor
+   #type OBJECT
+   #displayName Wall_Floor
+</header>
+
+<world>
+   #body BOX (0,8,0) 64 64 8
+   #respondsToGravity false
+</world>
+
+<object>
+   #obtainable false
+   #objectType STATIC
+   #combined true
+</object>
+
+<graphics>
+   <animations>
+      #add standing wall_floor.as
+   </animations>
+</graphics>

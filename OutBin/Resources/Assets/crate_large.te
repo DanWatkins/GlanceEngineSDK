@@ -1,0 +1,21 @@
+<header>
+   #name crate_large
+   #type OBJECT
+   #displayName Crate
+</header>
+
+<world>
+   #body BOX (0,0,0) 64 64 64
+</world>
+
+<object>
+   #obtainable false
+   #objectType STATIC
+   #combined true
+</object>
+
+<graphics>
+   <animations>
+      #add standing crate_large.as
+   </animations>
+</graphics>

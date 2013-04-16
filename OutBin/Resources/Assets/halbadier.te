@@ -1,0 +1,16 @@
+<header>
+   #name halbadier
+   #type ACTOR
+   #displayName Halbadier
+</header>
+
+<world>
+   #body BOX (0,0,0) 16 16 40
+</world>
+
+<graphics>   
+   <animations>
+      #add standing halbadier_standing.as
+	  #add walking halbadier_walking.as
+   </animations>
+</graphics>

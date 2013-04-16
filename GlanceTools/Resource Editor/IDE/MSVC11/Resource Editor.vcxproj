@@ -42,7 +42,7 @@
     <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\..\..\..\Bin\Bin32\</OutDir>
+    <OutDir>..\..\..\..\OutBin\Bin32\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostCpp;$(IncludePath)</IncludePath>
@@ -51,7 +51,7 @@
     <ExtensionsToDeleteOnClean>*.Build</ExtensionsToDeleteOnClean>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\..\..\..\Bin\Bin32\</OutDir>
+    <OutDir>..\..\..\..\OutBin\Bin32\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostCpp;$(IncludePath)</IncludePath>

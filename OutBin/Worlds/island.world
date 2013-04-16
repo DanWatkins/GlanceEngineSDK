@@ -1,0 +1,245 @@
+<entity>
+  #make halbadier (1250,800,1) A001
+
+  
+  #make wall_top_left (384,708) A002
+
+  #make wall_horizontal (448,708,0) A003
+  #make wall_horizontal (512,708,0) A004
+  #make wall_horizontal (576,708,0) A004
+
+  #make wall_top_right (640,708,0) A000
+
+
+  #make wall_top_left (688,960,0) A006
+
+  #make wall_bottom_right (640,1072,0) A000
+
+  #make wall_horizontal (448,1072,0) A003
+  #make wall_horizontal (512,1072,0) A004
+  #make wall_horizontal (576,1072,0) A004
+
+  #make wall_vertical (384,768,0) A005
+  #make wall_vertical (384,832,0) A005
+  #make wall_vertical (384,896,0) A005
+  #make wall_vertical (384,960,0) A006
+
+  #make wall_bottom_left (384,1072,0) A007
+
+  #make wall_top_left (1024,708,0) A002
+
+  #make wall_horizontal (1088,708,0) A003
+  #make wall_horizontal (1152,708,0) A004
+  #make wall_horizontal (1216,708,0) A004
+
+  #make wall_top_right (1280,708,0) A000
+
+  #make wall_bottom_left (688,816,0) A005
+  #make wall_horizontal_quarter (752,816,0) A000
+  #make wall_horizontal (768,816,0) A000
+  #make wall_horizontal (832,816,0) A000
+  #make wall_horizontal (896,816,0) A000
+  #make wall_horizontal_quarter (960,816,0) A000
+  #make wall_bottom_right (976,816,0) A000
+
+  #make wall_horizontal_quarter (752,960,0) A
+  #make wall_horizontal (768,960,0) A
+
+  #make wall_horizontal (896,960,0) A
+  #make wall_horizontal_quarter (960,960,0) A
+  #make wall_top_right (976,960,0) A
+
+  #make wall_bottom_left (1024,1072,0) A
+  #make wall_horizontal (1088,1072,0) A
+  #make wall_horizontal (1152,1072,0) A
+  #make wall_horizontal (1216,1072,0) A
+
+  #make wall_vertical (1328,768,0) A
+  #make wall_vertical (1328,832,0) A
+  #make wall_vertical (1328,896,0) A
+  #make wall_vertical (1328,960,0) A
+  #make wall_bottom_right (1280,1072,0) Az
+  
+  #make palm_tree (640,1172,0) A
+  #make palm_tree (1024,1143,0) A
+  #make palm_tree (1570,1062,0) A
+  
+  #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ #make palm_tree (280,754,0) A
+ 
+  
+  
+  #set player A001
+</entity>
+
+<map>
+   #dimensions (46,31)
+   #tileset default.ts
+   
+	<layer1>
+	4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+	4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+	4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+	4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+	4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+	4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+	4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+	4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 5 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 5 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 5 5 3 3 0 0 0 0 0 3 3 3 3 3 0 0 0 0 0 3 3 3 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 5 3 3 3 0 0 0 0 0 3 3 3 3 3 0 0 0 0 0 3 3 3 5 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 5 3 3 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 3 3 3 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 5 3 3 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 3 3 3 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 5 3 3 3 0 0 0 0 0 3 3 3 3 3 0 0 0 0 0 3 3 3 3 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 5 5 3 3 0 0 0 0 0 3 3 3 3 3 0 0 0 0 0 3 3 3 3 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 5 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 5 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 5 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 5 5 5 5 5 3 3 3 3 3 3 3 3 3 5 5 5 5 5 5 5 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 5 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+    4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+
+  </layer1>
+	
+</map>

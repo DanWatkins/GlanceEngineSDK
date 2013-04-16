@@ -1,0 +1,21 @@
+<header>
+   #name pistol
+   #type OBJECT
+   #displayName Pistol
+</header>
+
+<world>
+   #body BOX (0,0,0) 26 20 4
+</world>
+
+<object>
+   #obtainable true
+   #objectType WEAPON
+   #combined false
+</object>
+
+<graphics>
+   <animations>
+      #add standing pistol.as
+   </animations>
+</graphics>

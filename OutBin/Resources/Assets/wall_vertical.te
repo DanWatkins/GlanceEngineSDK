@@ -1,0 +1,22 @@
+<header>
+   #name wall_vertical
+   #type OBJECT
+   #displayName Wall
+</header>
+
+<world>
+   #body BOX (0,64,0) 16 64 64
+   #respondsToGravity false
+</world>
+
+<object>
+   #obtainable false
+   #objectType STATIC
+   #combined true
+</object>
+
+<graphics>
+   <animations>
+      #add standing wall_vertical.as
+   </animations>
+</graphics>

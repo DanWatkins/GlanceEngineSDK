@@ -1,0 +1,19 @@
+<header>
+   #name barrel
+   #type OBJECT
+   #displayName Barrel
+</header>
+
+<world>
+   #body BOX (0,46,0) 32 32 54
+</world>
+
+<object>
+   #obtainable false
+   #objectType STATIC
+   #combined true
+</object>
+
+<graphics>
+   #mapImage barrel.png
+</graphics>

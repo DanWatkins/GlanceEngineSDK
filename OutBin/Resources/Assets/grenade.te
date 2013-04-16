@@ -1,0 +1,21 @@
+<header>
+   #name grenade
+   #type OBJECT
+   #displayName Grenade
+</header>
+
+<world>
+   #body BOX (0,0,0) 6 6 6
+</world>
+
+<object>
+   #obtainable true
+   #objectType STATIC
+   #combined true
+</object>
+
+<graphics>
+   <animations>
+      #add standing grenade.as
+   </animations>
+</graphics>

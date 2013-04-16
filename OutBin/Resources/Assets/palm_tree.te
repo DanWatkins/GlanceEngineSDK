@@ -1,0 +1,22 @@
+<header>
+   #name palm_tree
+   #type OBJECT
+   #displayName Palm_Tree
+</header>
+
+<world>
+   #body BOX (0,0,0) 20 12 200
+   #respondsToGravity false
+</world>
+
+<object>
+   #obtainable false
+   #objectType STATIC
+   #combined false
+</object>
+
+<graphics>
+   <animations>
+      #add standing palm_tree.as
+   </animations>
+</graphics>

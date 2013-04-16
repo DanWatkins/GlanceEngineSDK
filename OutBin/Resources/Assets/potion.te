@@ -1,0 +1,21 @@
+<header>
+   #name potion
+   #type OBJECT
+   #displayName Potion
+</header>
+
+<world>
+   #body BOX (0,0,0) 4 8 4
+</world>
+
+<object>
+   #obtainable true
+   #objectType STATIC
+   #combined true
+</object>
+
+<graphics>
+   <animations>
+      #add standing potion.as
+   </animations>
+</graphics>

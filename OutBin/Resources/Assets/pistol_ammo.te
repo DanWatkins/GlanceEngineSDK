@@ -1,0 +1,26 @@
+<header>
+   #name pistol_ammo
+   #type OBJECT
+   #displayName Pistol_Ammo
+</header>
+
+<world>
+   #body BOX (0,0,0) 5 8 5
+</world>
+
+<object>
+   #obtainable true
+   #objectType AMMO
+   #combined true
+</object>
+
+<ammo>
+   #roundCount 18
+   #projectileName pistol_projectile
+</ammo>
+
+<graphics>
+   <animations>
+      #add standing pistol_ammo.as
+   </animations>
+</graphics>
