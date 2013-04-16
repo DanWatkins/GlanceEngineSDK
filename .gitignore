@@ -2,7 +2,9 @@
 *.lib
 *.Build
 *.CppClean
+*.vmode
 
+debug.txt
 
 #################
 ## Eclipse
