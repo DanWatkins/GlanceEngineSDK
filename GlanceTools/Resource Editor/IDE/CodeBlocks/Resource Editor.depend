@@ -1,0 +1,1281 @@
+# depslib dependency file v1.0
+1352662179 source:/home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/Testbed/Src/Main.cpp
+	"Main.h"
+
+1352612633 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/Testbed/Src/Main.h
+	"../../GlanceGUI/Src/GUI.h"
+	"../../GlanceWorld/Src/World.h"
+	"../../GlanceAudio/Src/Audio.h"
+	"GUI_ID.h"
+	"Menu.h"
+
+1346034517 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/GUI.h
+	"../../GlanceCore/Src/Glance.h"
+	"../../GlanceAsset/Src/Asset.h"
+	"Element.h"
+	"IntegratedElementIds.h"
+	"Elements/Helpers/Drager.h"
+	"Elements/Containers/DialogBox.h"
+	"Elements/Containers/GroupBox.h"
+	"Elements/Controls/ButtonCaption.h"
+	"Elements/Controls/CheckBox.h"
+	"Elements/Controls/EditBox.h"
+	"Elements/Selectors/ContextMenu.h"
+	"Elements/Selectors/MenuBar.h"
+	"Elements/Statics/Picture.h"
+	"Elements/Statics/ProgressBar.h"
+	"Elements/Statics/Text.h"
+	"Elements/Selectors/ListBox.h"
+	"Root.h"
+
+1352253355 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceCore/Src/Glance.h
+	"Constants.h"
+	"Diagnostic.h"
+	"Debug.h"
+	"Timer.h"
+	"Input.h"
+	"Window.h"
+
+1347142693 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceCore/Src/Constants.h
+	<Windows.h>
+	<memory>
+	<tr1/memory>
+	<SFML/System.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<boost/filesystem.hpp>
+	"../../GlanceUtility/Src/Utility.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceUtility/Src/Utility.h
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<cmath>
+	<iomanip>
+	<list>
+	<vector>
+	<exception>
+	<stdio.h>
+	<cstdlib>
+	<boost/filesystem.hpp>
+	"String.h"
+	"Extensions.h"
+	"Vector2D.h"
+	"Vector3D.h"
+	"Rect.h"
+	"IO.h"
+	"HML.h"
+	<memory>
+	<tr1/memory>
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceUtility/Src/String.h
+	"Utility.h"
+
+1344304912 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceUtility/Src/Extensions.h
+	"Utility.h"
+
+1347827263 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceUtility/Src/Vector2D.h
+	"Utility.h"
+
+1349237360 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceUtility/Src/Vector3D.h
+	"Utility.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceUtility/Src/Rect.h
+	"Utility.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceUtility/Src/IO.h
+	"Utility.h"
+
+1348276022 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceUtility/Src/HML.h
+	"Utility.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceCore/Src/Diagnostic.h
+	"Glance.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceCore/Src/Debug.h
+	"Glance.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceCore/Src/Timer.h
+	"Glance.h"
+
+1346034841 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceCore/Src/Input.h
+	"Glance.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceCore/Src/Window.h
+	"Glance.h"
+
+1351644944 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceAsset/Src/Asset.h
+	"../../GlanceRender2D/Src/Render2D.h"
+	"Image.h"
+	"SoundBuffer.h"
+	"FrameImage.h"
+	"AssetManager.h"
+
+1346034530 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceRender2D/Src/Render2D.h
+	"../../GlanceCore/Src/Glance.h"
+	"Sprite.h"
+	"SpriteFill.h"
+	"SpriteFrame.h"
+	"Font.h"
+	"Console.h"
+
+1348457861 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceRender2D/Src/Sprite.h
+	"Render2D.h"
+
+1348429158 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceRender2D/Src/SpriteFill.h
+	"Render2D.h"
+
+1348452255 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceRender2D/Src/SpriteFrame.h
+	"Render2D.h"
+
+1348451708 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceRender2D/Src/Font.h
+	"Render2D.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceRender2D/Src/Console.h
+	"Render2D.h"
+
+1347729878 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceAsset/Src/Image.h
+	"Asset.h"
+
+1351645610 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceAsset/Src/SoundBuffer.h
+	"Asset.h"
+
+1347760620 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceAsset/Src/FrameImage.h
+	"Asset.h"
+
+1348452045 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceAsset/Src/AssetManager.h
+	"Asset.h"
+
+1352618850 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Element.h
+	"GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/IntegratedElementIds.h
+	"GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Helpers/Drager.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Containers/DialogBox.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Containers/GroupBox.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Controls/ButtonCaption.h
+	"../../GUI.h"
+
+1352662978 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Controls/CheckBox.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Controls/EditBox.h
+	"../../GUI.h"
+
+1352619651 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Selectors/ContextMenu.h
+	"../../GUI.h"
+
+1352661925 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Selectors/MenuBar.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Statics/Picture.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Statics/ProgressBar.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Statics/Text.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Elements/Selectors/ListBox.h
+	"../../GUI.h"
+
+1352568343 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceGUI/Src/Root.h
+	"GUI.h"
+
+1348452270 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceWorld/Src/World.h
+	"../../GlanceEntity/Src/Entity.h"
+	"Map/TileSet.h"
+	"Map/Map.h"
+	"WorldLoader.h"
+	"Camera.h"
+
+1351448677 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/Entity.h
+	"Constants.h"
+
+1348354585 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/Constants.h
+	"../../GlancePhysics/Src/Physics.h"
+	"../../GlanceAsset/Src/Asset.h"
+	"../../GlanceWorld/Src/World.h"
+	"Animation.h"
+	"AnimationManager.h"
+	"Inventory/InventoryGroup.h"
+	"Inventory/Inventory.h"
+	"Entities/Actor.h"
+	"Player.h"
+	"Entities/Object.h"
+	"Entities/Objects/Ammo.h"
+	"Entities/Objects/Weapon.h"
+	"EntityLoader.h"
+	"EntityManager.h"
+
+1352173617 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlancePhysics/Src/Physics.h
+	"../../GlanceCore/Src/Glance.h"
+	"Body.h"
+	"Body/SweepBox.h"
+	"Body/Box.h"
+	"Body/Cylinder.h"
+	"Collision.h"
+	"Environment.h"
+
+1352250020 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlancePhysics/Src/Body.h
+	"Physics.h"
+
+1352244494 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlancePhysics/Src/Body/SweepBox.h
+	"../Physics.h"
+
+1348891233 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlancePhysics/Src/Body/Box.h
+	"../Physics.h"
+
+1351451528 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlancePhysics/Src/Body/Cylinder.h
+	"../Physics.h"
+
+1352154067 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlancePhysics/Src/Collision.h
+	"Physics.h"
+
+1352149991 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlancePhysics/Src/Environment.h
+	"Physics.h"
+
+1348613327 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/Animation.h
+	"Constants.h"
+
+1348355723 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/AnimationManager.h
+	"Constants.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/Inventory/InventoryGroup.h
+	"../Entity.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/Inventory/Inventory.h
+	"../Entity.h"
+
+1348611911 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/Entities/Actor.h
+	"../Entity.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/Player.h
+	"Entity.h"
+
+1347729619 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/Entities/Object.h
+	"../Entity.h"
+
+1348454735 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/Entities/Objects/Ammo.h
+	"../../Entity.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/Entities/Objects/Weapon.h
+	"../../Entity.h"
+
+1348452233 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/EntityLoader.h
+	"Entity.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceEntity/Src/EntityManager.h
+	"Entity.h"
+
+1348451514 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceWorld/Src/Map/TileSet.h
+	"../World.h"
+
+1348451514 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceWorld/Src/Map/Map.h
+	"../World.h"
+
+1348452270 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceWorld/Src/WorldLoader.h
+	"World.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceWorld/Src/Camera.h
+	"World.h"
+
+1351817645 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceAudio/Src/Audio.h
+	"../../GlanceAsset/Src/Asset.h"
+	"Sound.h"
+	"Music.h"
+
+1351817645 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceAudio/Src/Sound.h
+	"Audio.h"
+
+1351817645 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/GlanceAudio/Src/Music.h
+	"Audio.h"
+
+1352613982 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/Testbed/Src/GUI_ID.h
+
+1352611566 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/Testbed/Src/Menu.h
+	"Main.h"
+
+1352663327 source:/home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_084/GlanceEngine/Testbed/Src/Menu.cpp
+	"Main.h"
+
+1352767693 source:/home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceTools/Testbed/Src/Menu.cpp
+	"Main.h"
+
+1353120667 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceTools/Testbed/Src/Main.h
+	"../../../GlanceEngine/GlanceGUI/Src/GUI.h"
+	"../../../GlanceEngine/GlanceWorld/Src/World.h"
+	"../../../GlanceEngine/GlanceAudio/Src/Audio.h"
+	"GUI_ID.h"
+	"Menu.h"
+
+1346034517 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/GUI.h
+	"../../GlanceCore/Src/Glance.h"
+	"../../GlanceAsset/Src/Asset.h"
+	"Element.h"
+	"IntegratedElementIds.h"
+	"Elements/Helpers/Drager.h"
+	"Elements/Containers/DialogBox.h"
+	"Elements/Containers/GroupBox.h"
+	"Elements/Controls/ButtonCaption.h"
+	"Elements/Controls/CheckBox.h"
+	"Elements/Controls/EditBox.h"
+	"Elements/Selectors/ContextMenu.h"
+	"Elements/Selectors/MenuBar.h"
+	"Elements/Statics/Picture.h"
+	"Elements/Statics/ProgressBar.h"
+	"Elements/Statics/Text.h"
+	"Elements/Selectors/ListBox.h"
+	"Root.h"
+
+1353277077 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceCore/Src/Glance.h
+	"Constants.h"
+	"Diagnostic.h"
+	"Debug.h"
+	"Timer.h"
+	"Input.h"
+	"Window.h"
+
+1347142693 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceCore/Src/Constants.h
+	<Windows.h>
+	<memory>
+	<tr1/memory>
+	<SFML/System.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<boost/filesystem.hpp>
+	"../../GlanceUtility/Src/Utility.h"
+
+1352773142 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceUtility/Src/Utility.h
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<cmath>
+	<iomanip>
+	<list>
+	<vector>
+	<map>
+	<exception>
+	<stdio.h>
+	<cstdlib>
+	<boost/filesystem.hpp>
+	"String.h"
+	"Extensions.h"
+	"Vector2D.h"
+	"Vector3D.h"
+	"Rect.h"
+	"IO.h"
+	"HML.h"
+	<memory>
+	<tr1/memory>
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceUtility/Src/String.h
+	"Utility.h"
+
+1344304912 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceUtility/Src/Extensions.h
+	"Utility.h"
+
+1347827263 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceUtility/Src/Vector2D.h
+	"Utility.h"
+
+1349237360 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceUtility/Src/Vector3D.h
+	"Utility.h"
+
+1353529601 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceUtility/Src/Rect.h
+	"Utility.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceUtility/Src/IO.h
+	"Utility.h"
+
+1348276022 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceUtility/Src/HML.h
+	"Utility.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceCore/Src/Diagnostic.h
+	"Glance.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceCore/Src/Debug.h
+	"Glance.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceCore/Src/Timer.h
+	"Glance.h"
+
+1353371344 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceCore/Src/Input.h
+	"Glance.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceCore/Src/Window.h
+	"Glance.h"
+
+1351644944 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceAsset/Src/Asset.h
+	"../../GlanceRender2D/Src/Render2D.h"
+	"Image.h"
+	"SoundBuffer.h"
+	"FrameImage.h"
+	"AssetManager.h"
+
+1346034530 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceRender2D/Src/Render2D.h
+	"../../GlanceCore/Src/Glance.h"
+	"Sprite.h"
+	"SpriteFill.h"
+	"SpriteFrame.h"
+	"Font.h"
+	"Console.h"
+
+1352935449 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceRender2D/Src/Sprite.h
+	"Render2D.h"
+
+1348429158 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceRender2D/Src/SpriteFill.h
+	"Render2D.h"
+
+1348452255 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceRender2D/Src/SpriteFrame.h
+	"Render2D.h"
+
+1348451708 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceRender2D/Src/Font.h
+	"Render2D.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceRender2D/Src/Console.h
+	"Render2D.h"
+
+1347729878 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceAsset/Src/Image.h
+	"Asset.h"
+
+1351645610 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceAsset/Src/SoundBuffer.h
+	"Asset.h"
+
+1347760620 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceAsset/Src/FrameImage.h
+	"Asset.h"
+
+1348452045 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceAsset/Src/AssetManager.h
+	"Asset.h"
+
+1353034234 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Element.h
+	"GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/IntegratedElementIds.h
+	"GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Helpers/Drager.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Containers/DialogBox.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Containers/GroupBox.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Controls/ButtonCaption.h
+	"../../GUI.h"
+
+1352662978 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Controls/CheckBox.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Controls/EditBox.h
+	"../../GUI.h"
+
+1353462018 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Selectors/ContextMenu.h
+	"../../GUI.h"
+
+1353274339 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Selectors/MenuBar.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Statics/Picture.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Statics/ProgressBar.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Statics/Text.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Elements/Selectors/ListBox.h
+	"../../GUI.h"
+
+1353365476 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceGUI/Src/Root.h
+	"GUI.h"
+
+1352768939 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceWorld/Src/World.h
+	"../../GlanceEntity/Src/Entity.h"
+	"Map/TileSet.h"
+	"Map/Map.h"
+	"WorldLoader.h"
+	"Camera.h"
+
+1351448677 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/Entity.h
+	"Constants.h"
+
+1348354585 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/Constants.h
+	"../../GlancePhysics/Src/Physics.h"
+	"../../GlanceAsset/Src/Asset.h"
+	"../../GlanceWorld/Src/World.h"
+	"Animation.h"
+	"AnimationManager.h"
+	"Inventory/InventoryGroup.h"
+	"Inventory/Inventory.h"
+	"Entities/Actor.h"
+	"Player.h"
+	"Entities/Object.h"
+	"Entities/Objects/Ammo.h"
+	"Entities/Objects/Weapon.h"
+	"EntityLoader.h"
+	"EntityManager.h"
+
+1352173617 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlancePhysics/Src/Physics.h
+	"../../GlanceCore/Src/Glance.h"
+	"Body.h"
+	"Body/SweepBox.h"
+	"Body/Box.h"
+	"Body/Cylinder.h"
+	"Collision.h"
+	"Environment.h"
+
+1352250020 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlancePhysics/Src/Body.h
+	"Physics.h"
+
+1352244494 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlancePhysics/Src/Body/SweepBox.h
+	"../Physics.h"
+
+1348891233 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlancePhysics/Src/Body/Box.h
+	"../Physics.h"
+
+1351451528 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlancePhysics/Src/Body/Cylinder.h
+	"../Physics.h"
+
+1352154067 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlancePhysics/Src/Collision.h
+	"Physics.h"
+
+1352770191 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlancePhysics/Src/Environment.h
+	"Physics.h"
+
+1352922188 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/Animation.h
+	"Constants.h"
+
+1348355723 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/AnimationManager.h
+	"Constants.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/Inventory/InventoryGroup.h
+	"../Entity.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/Inventory/Inventory.h
+	"../Entity.h"
+
+1348611911 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/Entities/Actor.h
+	"../Entity.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/Player.h
+	"Entity.h"
+
+1347729619 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/Entities/Object.h
+	"../Entity.h"
+
+1348454735 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/Entities/Objects/Ammo.h
+	"../../Entity.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/Entities/Objects/Weapon.h
+	"../../Entity.h"
+
+1348452233 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/EntityLoader.h
+	"Entity.h"
+
+1352769010 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceEntity/Src/EntityManager.h
+	"Entity.h"
+
+1348451514 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceWorld/Src/Map/TileSet.h
+	"../World.h"
+
+1348451514 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceWorld/Src/Map/Map.h
+	"../World.h"
+
+1348452270 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceWorld/Src/WorldLoader.h
+	"World.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceWorld/Src/Camera.h
+	"World.h"
+
+1351817645 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceAudio/Src/Audio.h
+	"../../GlanceAsset/Src/Asset.h"
+	"Sound.h"
+	"Music.h"
+
+1351817645 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceAudio/Src/Sound.h
+	"Audio.h"
+
+1351817645 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceEngine/GlanceAudio/Src/Music.h
+	"Audio.h"
+
+1352613982 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceTools/Testbed/Src/GUI_ID.h
+
+1352611566 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_089/GlanceTools/Testbed/Src/Menu.h
+	"Main.h"
+
+1354679771 source:/home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceTools/Testbed/Src/Main.cpp
+	"Main.h"
+
+1353120667 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceTools/Testbed/Src/Main.h
+	"../../../GlanceEngine/GlanceGUI/Src/GUI.h"
+	"../../../GlanceEngine/GlanceWorld/Src/World.h"
+	"../../../GlanceEngine/GlanceAudio/Src/Audio.h"
+	"GUI_ID.h"
+	"Menu.h"
+
+1353710893 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/GUI.h
+	"../../GlanceCore/Src/Glance.h"
+	"../../GlanceAsset/Src/Asset.h"
+	"Element.h"
+	"IntegratedElementIds.h"
+	"Elements/Helpers/Drager.h"
+	"Elements/Containers/DialogBox.h"
+	"Elements/Containers/GroupBox.h"
+	"Elements/Containers/TabBar.h"
+	"Elements/Containers/TabPage.h"
+	"Elements/Controls/ButtonCaption.h"
+	"Elements/Controls/ButtonImage.h"
+	"Elements/Controls/CheckBox.h"
+	"Elements/Controls/EditBox.h"
+	"Elements/Controls/Slider.h"
+	"Elements/Selectors/ContextMenu.h"
+	"Elements/Selectors/MenuBar.h"
+	"Elements/Statics/Picture.h"
+	"Elements/Statics/ProgressBar.h"
+	"Elements/Statics/Text.h"
+	"Elements/Selectors/ListBox.h"
+	"Root.h"
+
+1354989259 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceCore/Src/Glance.h
+	"Constants.h"
+	"Diagnostic.h"
+	"Debug.h"
+	"Timer.h"
+	"Input.h"
+	"Window.h"
+
+1347142693 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceCore/Src/Constants.h
+	<Windows.h>
+	<memory>
+	<tr1/memory>
+	<SFML/System.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<boost/filesystem.hpp>
+	"../../GlanceUtility/Src/Utility.h"
+
+1352773142 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceUtility/Src/Utility.h
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<cmath>
+	<iomanip>
+	<list>
+	<vector>
+	<map>
+	<exception>
+	<stdio.h>
+	<cstdlib>
+	<boost/filesystem.hpp>
+	"String.h"
+	"Extensions.h"
+	"Vector2D.h"
+	"Vector3D.h"
+	"Rect.h"
+	"IO.h"
+	"HML.h"
+	<memory>
+	<tr1/memory>
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceUtility/Src/String.h
+	"Utility.h"
+
+1344304912 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceUtility/Src/Extensions.h
+	"Utility.h"
+
+1347827263 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceUtility/Src/Vector2D.h
+	"Utility.h"
+
+1354679701 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceUtility/Src/Vector3D.h
+	"Utility.h"
+
+1353529601 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceUtility/Src/Rect.h
+	"Utility.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceUtility/Src/IO.h
+	"Utility.h"
+
+1348276022 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceUtility/Src/HML.h
+	"Utility.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceCore/Src/Diagnostic.h
+	"Glance.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceCore/Src/Debug.h
+	"Glance.h"
+
+1354677715 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceCore/Src/Timer.h
+	"Glance.h"
+
+1353371344 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceCore/Src/Input.h
+	"Glance.h"
+
+1354678089 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceCore/Src/Window.h
+	"Glance.h"
+
+1351644944 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceAsset/Src/Asset.h
+	"../../GlanceRender2D/Src/Render2D.h"
+	"Image.h"
+	"SoundBuffer.h"
+	"FrameImage.h"
+	"AssetManager.h"
+
+1346034530 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceRender2D/Src/Render2D.h
+	"../../GlanceCore/Src/Glance.h"
+	"Sprite.h"
+	"SpriteFill.h"
+	"SpriteFrame.h"
+	"Font.h"
+	"Console.h"
+
+1352935449 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceRender2D/Src/Sprite.h
+	"Render2D.h"
+
+1348429158 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceRender2D/Src/SpriteFill.h
+	"Render2D.h"
+
+1348452255 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceRender2D/Src/SpriteFrame.h
+	"Render2D.h"
+
+1348451708 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceRender2D/Src/Font.h
+	"Render2D.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceRender2D/Src/Console.h
+	"Render2D.h"
+
+1347729878 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceAsset/Src/Image.h
+	"Asset.h"
+
+1351645610 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceAsset/Src/SoundBuffer.h
+	"Asset.h"
+
+1347760620 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceAsset/Src/FrameImage.h
+	"Asset.h"
+
+1348452045 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceAsset/Src/AssetManager.h
+	"Asset.h"
+
+1354590410 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Element.h
+	"GUI.h"
+
+1353644727 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/IntegratedElementIds.h
+	"GUI.h"
+
+1353695218 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Helpers/Drager.h
+	"../../GUI.h"
+
+1353607596 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Containers/DialogBox.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Containers/GroupBox.h
+	"../../GUI.h"
+
+1354339695 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Containers/TabBar.h
+	"../../GUI.h"
+
+1354591288 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Containers/TabPage.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Controls/ButtonCaption.h
+	"../../GUI.h"
+
+1353547015 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Controls/ButtonImage.h
+	"../../GUI.h"
+
+1352662978 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Controls/CheckBox.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Controls/EditBox.h
+	"../../GUI.h"
+
+1353702204 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Controls/Slider.h
+	"../../GUI.h"
+
+1353462018 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Selectors/ContextMenu.h
+	"../../GUI.h"
+
+1353274339 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Selectors/MenuBar.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Statics/Picture.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Statics/ProgressBar.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Statics/Text.h
+	"../../GUI.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Elements/Selectors/ListBox.h
+	"../../GUI.h"
+
+1354149801 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceGUI/Src/Root.h
+	"GUI.h"
+
+1354679090 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceWorld/Src/World.h
+	"../../GlanceEntity/Src/Entity.h"
+	"Map/TileSet.h"
+	"Map/Map.h"
+	"WorldLoader.h"
+	"Camera.h"
+
+1354665688 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/Entity.h
+	"Constants.h"
+
+1354665756 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/Constants.h
+	"../../GlancePhysics/Src/Physics.h"
+	"../../GlanceAsset/Src/Asset.h"
+	"../../GlanceWorld/Src/World.h"
+	"Animation.h"
+	"AnimationManager.h"
+	"Inventory/InventoryGroup.h"
+	"Inventory/Inventory.h"
+	"Entities/Actor.h"
+	"Player.h"
+	"Entities/Object.h"
+	"Entities/Objects/Ammo.h"
+	"Entities/Objects/Weapon.h"
+	"EntityLoader.h"
+	"EntityManager.h"
+
+1352173617 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlancePhysics/Src/Physics.h
+	"../../GlanceCore/Src/Glance.h"
+	"Body.h"
+	"Body/SweepBox.h"
+	"Body/Box.h"
+	"Body/Cylinder.h"
+	"Collision.h"
+	"Environment.h"
+
+1354679602 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlancePhysics/Src/Body.h
+	"Physics.h"
+
+1352244494 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlancePhysics/Src/Body/SweepBox.h
+	"../Physics.h"
+
+1348891233 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlancePhysics/Src/Body/Box.h
+	"../Physics.h"
+
+1351451528 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlancePhysics/Src/Body/Cylinder.h
+	"../Physics.h"
+
+1352154067 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlancePhysics/Src/Collision.h
+	"Physics.h"
+
+1352770191 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlancePhysics/Src/Environment.h
+	"Physics.h"
+
+1354665952 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/Animation.h
+	"Constants.h"
+
+1354665725 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/AnimationManager.h
+	"Constants.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/Inventory/InventoryGroup.h
+	"../Entity.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/Inventory/Inventory.h
+	"../Entity.h"
+
+1348611911 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/Entities/Actor.h
+	"../Entity.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/Player.h
+	"Entity.h"
+
+1347729619 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/Entities/Object.h
+	"../Entity.h"
+
+1348454735 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/Entities/Objects/Ammo.h
+	"../../Entity.h"
+
+1346034424 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/Entities/Objects/Weapon.h
+	"../../Entity.h"
+
+1348452233 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/EntityLoader.h
+	"Entity.h"
+
+1354679208 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceEntity/Src/EntityManager.h
+	"Entity.h"
+
+1348451514 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceWorld/Src/Map/TileSet.h
+	"../World.h"
+
+1354996444 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceWorld/Src/Map/Map.h
+	"../World.h"
+
+1348452270 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceWorld/Src/WorldLoader.h
+	"World.h"
+
+1346034423 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceWorld/Src/Camera.h
+	"World.h"
+
+1351817645 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceAudio/Src/Audio.h
+	"../../GlanceAsset/Src/Asset.h"
+	"Sound.h"
+	"Music.h"
+
+1351817645 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceAudio/Src/Sound.h
+	"Audio.h"
+
+1351817645 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceEngine/GlanceAudio/Src/Music.h
+	"Audio.h"
+
+1352613982 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceTools/Testbed/Src/GUI_ID.h
+
+1352611566 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceTools/Testbed/Src/Menu.h
+	"Main.h"
+
+1352767693 source:/home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_095/GlanceTools/Testbed/Src/Menu.cpp
+	"Main.h"
+
+1358543547 source:/home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceTools/Resource Editor/Src/Main.cpp
+	"Main.h"
+
+1358486691 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceTools/Resource Editor/Src/Main.h
+	"../../../GlanceEngine/GlanceGUI/Src/GUI.h"
+	"../../../GlanceEngine/GlanceWorld/Src/World.h"
+	"../../../GlanceEngine/GlanceAudio/Src/Audio.h"
+	"GUI_ID.h"
+	"Menu.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/GUI.h
+	"../../GlanceCore/Src/Glance.h"
+	"../../GlanceAsset/Src/Asset.h"
+	"Element.h"
+	"IntegratedElementIds.h"
+	"Elements/Helpers/Drager.h"
+	"Elements/Containers/DialogBox.h"
+	"Elements/Containers/GroupBox.h"
+	"Elements/Containers/TabBar.h"
+	"Elements/Containers/TabPage.h"
+	"Elements/Controls/ButtonCaption.h"
+	"Elements/Controls/ButtonImage.h"
+	"Elements/Controls/CheckBox.h"
+	"Elements/Controls/EditBox.h"
+	"Elements/Controls/Slider.h"
+	"Elements/Selectors/ContextMenu.h"
+	"Elements/Selectors/MenuBar.h"
+	"Elements/Statics/Picture.h"
+	"Elements/Statics/ProgressBar.h"
+	"Elements/Statics/Text.h"
+	"Elements/Selectors/ListBox.h"
+	"Root.h"
+
+1358533255 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceCore/Src/Glance.h
+	"Constants.h"
+	"Diagnostic.h"
+	"Debug.h"
+	"VideoSettings.h"
+	"Timer.h"
+	"Input.h"
+	"Window.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceCore/Src/Constants.h
+	<Windows.h>
+	<memory>
+	<tr1/memory>
+	<SFML/System.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<boost/filesystem.hpp>
+	"../../GlanceUtility/Src/Utility.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceUtility/Src/Utility.h
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<cmath>
+	<iomanip>
+	<list>
+	<vector>
+	<map>
+	<exception>
+	<stdio.h>
+	<cstdlib>
+	<boost/filesystem.hpp>
+	"String.h"
+	"Extensions.h"
+	"Vector2D.h"
+	"Vector3D.h"
+	"Rect.h"
+	"IO.h"
+	"HML.h"
+	<memory>
+	<tr1/memory>
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceUtility/Src/String.h
+	"Utility.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceUtility/Src/Extensions.h
+	"Utility.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceUtility/Src/Vector2D.h
+	"Utility.h"
+
+1358034732 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceUtility/Src/Vector3D.h
+	"Utility.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceUtility/Src/Rect.h
+	"Utility.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceUtility/Src/IO.h
+	"Utility.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceUtility/Src/HML.h
+	"Utility.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceCore/Src/Diagnostic.h
+	"Glance.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceCore/Src/Debug.h
+	"Glance.h"
+
+1358533221 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceCore/Src/VideoSettings.h
+	"Glance.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceCore/Src/Timer.h
+	"Glance.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceCore/Src/Input.h
+	"Glance.h"
+
+1358543427 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceCore/Src/Window.h
+	"Glance.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceAsset/Src/Asset.h
+	"../../GlanceRender2D/Src/Render2D.h"
+	"Image.h"
+	"SoundBuffer.h"
+	"FrameImage.h"
+	"AssetManager.h"
+
+1346034530 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceRender2D/Src/Render2D.h
+	"../../GlanceCore/Src/Glance.h"
+	"Sprite.h"
+	"SpriteFill.h"
+	"SpriteFrame.h"
+	"Font.h"
+	"Console.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceRender2D/Src/Sprite.h
+	"Render2D.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceRender2D/Src/SpriteFill.h
+	"Render2D.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceRender2D/Src/SpriteFrame.h
+	"Render2D.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceRender2D/Src/Font.h
+	"Render2D.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceRender2D/Src/Console.h
+	"Render2D.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceAsset/Src/Image.h
+	"Asset.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceAsset/Src/SoundBuffer.h
+	"Asset.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceAsset/Src/FrameImage.h
+	"Asset.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceAsset/Src/AssetManager.h
+	"Asset.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Element.h
+	"GUI.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/IntegratedElementIds.h
+	"GUI.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Helpers/Drager.h
+	"../../GUI.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Containers/DialogBox.h
+	"../../GUI.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Containers/GroupBox.h
+	"../../GUI.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Containers/TabBar.h
+	"../../GUI.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Containers/TabPage.h
+	"../../GUI.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Controls/ButtonCaption.h
+	"../../GUI.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Controls/ButtonImage.h
+	"../../GUI.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Controls/CheckBox.h
+	"../../GUI.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Controls/EditBox.h
+	"../../GUI.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Controls/Slider.h
+	"../../GUI.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Selectors/ContextMenu.h
+	"../../GUI.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Selectors/MenuBar.h
+	"../../GUI.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Statics/Picture.h
+	"../../GUI.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Statics/ProgressBar.h
+	"../../GUI.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Statics/Text.h
+	"../../GUI.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Elements/Selectors/ListBox.h
+	"../../GUI.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceGUI/Src/Root.h
+	"GUI.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceWorld/Src/World.h
+	"../../GlanceEntity/Src/Entity.h"
+	"Map/TileSet.h"
+	"Map/Map.h"
+	"WorldLoader.h"
+	"Camera.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/Entity.h
+	"Constants.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/Constants.h
+	"../../GlancePhysics/Src/Physics.h"
+	"../../GlanceAsset/Src/Asset.h"
+	"../../GlanceWorld/Src/World.h"
+	"Animation.h"
+	"AnimationManager.h"
+	"Inventory/InventoryGroup.h"
+	"Inventory/Inventory.h"
+	"Entities/Actor.h"
+	"Player.h"
+	"Entities/Object.h"
+	"Entities/Objects/Ammo.h"
+	"Entities/Objects/Weapon.h"
+	"EntityLoader.h"
+	"EntityManager.h"
+
+1357062436 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlancePhysics/Src/Physics.h
+	"../../GlanceCore/Src/Glance.h"
+	"Body.h"
+	"Body/SweepBox.h"
+	"Body/Box.h"
+	"Body/Cylinder.h"
+	"Collision.h"
+	"Environment.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlancePhysics/Src/Body.h
+	"Physics.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlancePhysics/Src/Body/SweepBox.h
+	"../Physics.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlancePhysics/Src/Body/Box.h
+	"../Physics.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlancePhysics/Src/Body/Cylinder.h
+	"../Physics.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlancePhysics/Src/Collision.h
+	"Physics.h"
+
+1358114152 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlancePhysics/Src/Environment.h
+	"Physics.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/Animation.h
+	"Constants.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/AnimationManager.h
+	"Constants.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/Inventory/InventoryGroup.h
+	"../Entity.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/Inventory/Inventory.h
+	"../Entity.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/Entities/Actor.h
+	"../Entity.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/Player.h
+	"Entity.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/Entities/Object.h
+	"../Entity.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/Entities/Objects/Ammo.h
+	"../../Entity.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/Entities/Objects/Weapon.h
+	"../../Entity.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/EntityLoader.h
+	"Entity.h"
+
+1358122613 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceEntity/Src/EntityManager.h
+	"Entity.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceWorld/Src/Map/TileSet.h
+	"../World.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceWorld/Src/Map/Map.h
+	"../World.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceWorld/Src/WorldLoader.h
+	"World.h"
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceWorld/Src/Camera.h
+	"World.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceAudio/Src/Audio.h
+	"../../GlanceAsset/Src/Asset.h"
+	"Sound.h"
+	"Music.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceAudio/Src/Sound.h
+	"Audio.h"
+
+1357061525 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceEngine/GlanceAudio/Src/Music.h
+	"Audio.h"
+
+1358486202 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceTools/Resource Editor/Src/GUI_ID.h
+
+1357061524 /home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceTools/Resource Editor/Src/Menu.h
+	"Main.h"
+
+1357061524 source:/home/dan/Dropbox/Valpine Project/Valpine Jam/ValpineJam_102/GlanceTools/Resource Editor/Src/Menu.cpp
+	"Main.h"
+

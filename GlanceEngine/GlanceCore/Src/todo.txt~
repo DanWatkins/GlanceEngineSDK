@@ -1,0 +1,15 @@
+
+- Add a bring to front method to call when an element is clicked on
+- Add whitelist and blacklist for what elements can be added as children to others
+X Make Update, Draw, AddChild, and simmilar methods protected for gui::Element so external systems don't mess with it
+- Add a center in rect method to gui::Text so it can easily be centered in a rectangular area (it returns and offset vector)
+- Optimize io directory iteration to calculate the total size of a directory
+X Remove all unnessesary occurences of double types in the GUI. Elements don't need positions and sizes finer than pixels (lol)
+X Make ge::Vector2D<int> called Point2D, and make it a template because sometimes integers are more appropriate than doubles
+X Make the use of floats and ints more logical in ge::Sprite, ge::SpriteFill, and ge::SpriteFrame
+
+
+////////////////////////////////////////////////////
+
+//TODO:      /something to do here (duh)
+//OPTI      /something could be optimized here (or unoptimized)

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GlanceGUI" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../../Lib/GlanceGUI-d.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../../../../Lib/GlanceGUI.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DBUILD_LINUX" />
+		</Compiler>
+		<Unit filename="../../Src/Element.cpp" />
+		<Unit filename="../../Src/Element.h" />
+		<Unit filename="../../Src/Elements/Containers/DialogBox.cpp" />
+		<Unit filename="../../Src/Elements/Containers/DialogBox.h" />
+		<Unit filename="../../Src/Elements/Containers/GroupBox.cpp" />
+		<Unit filename="../../Src/Elements/Containers/GroupBox.h" />
+		<Unit filename="../../Src/Elements/Containers/TabBar.cpp" />
+		<Unit filename="../../Src/Elements/Containers/TabBar.h" />
+		<Unit filename="../../Src/Elements/Containers/TabPage.h" />
+		<Unit filename="../../Src/Elements/Controls/ButtonCaption.cpp" />
+		<Unit filename="../../Src/Elements/Controls/ButtonCaption.h" />
+		<Unit filename="../../Src/Elements/Controls/ButtonImage.cpp" />
+		<Unit filename="../../Src/Elements/Controls/ButtonImage.h" />
+		<Unit filename="../../Src/Elements/Controls/CheckBox.cpp" />
+		<Unit filename="../../Src/Elements/Controls/CheckBox.h" />
+		<Unit filename="../../Src/Elements/Controls/EditBox.cpp" />
+		<Unit filename="../../Src/Elements/Controls/EditBox.h" />
+		<Unit filename="../../Src/Elements/Controls/ScrollBar.cpp" />
+		<Unit filename="../../Src/Elements/Controls/ScrollBar.h" />
+		<Unit filename="../../Src/Elements/Controls/Slider.cpp" />
+		<Unit filename="../../Src/Elements/Controls/Slider.h" />
+		<Unit filename="../../Src/Elements/Helpers/Cell.cpp" />
+		<Unit filename="../../Src/Elements/Helpers/Cell.h" />
+		<Unit filename="../../Src/Elements/Helpers/Drager.cpp" />
+		<Unit filename="../../Src/Elements/Helpers/Drager.h" />
+		<Unit filename="../../Src/Elements/Selectors/ComboBox.cpp" />
+		<Unit filename="../../Src/Elements/Selectors/ComboBox.h" />
+		<Unit filename="../../Src/Elements/Selectors/ContextMenu.cpp" />
+		<Unit filename="../../Src/Elements/Selectors/ContextMenu.h" />
+		<Unit filename="../../Src/Elements/Selectors/ListBox.cpp" />
+		<Unit filename="../../Src/Elements/Selectors/ListBox.h" />
+		<Unit filename="../../Src/Elements/Selectors/MenuBar.cpp" />
+		<Unit filename="../../Src/Elements/Selectors/MenuBar.h" />
+		<Unit filename="../../Src/Elements/Statics/Picture.cpp" />
+		<Unit filename="../../Src/Elements/Statics/Picture.h" />
+		<Unit filename="../../Src/Elements/Statics/ProgressBar.cpp" />
+		<Unit filename="../../Src/Elements/Statics/ProgressBar.h" />
+		<Unit filename="../../Src/Elements/Statics/Text.cpp" />
+		<Unit filename="../../Src/Elements/Statics/Text.h" />
+		<Unit filename="../../Src/GUI.cpp" />
+		<Unit filename="../../Src/GUI.h" />
+		<Unit filename="../../Src/Root.cpp" />
+		<Unit filename="../../Src/Root.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

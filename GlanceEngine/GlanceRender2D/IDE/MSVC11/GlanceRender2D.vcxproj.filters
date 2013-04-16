@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Font.cpp" />
+    <ClCompile Include="..\..\Src\Sprite.cpp" />
+    <ClCompile Include="..\..\Src\SpriteFill.cpp" />
+    <ClCompile Include="..\..\Src\SpriteFrame.cpp" />
+    <ClCompile Include="..\..\Src\Shape\Rectangle.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Shape\Line.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Font.h" />
+    <ClInclude Include="..\..\Src\Render2D.h" />
+    <ClInclude Include="..\..\Src\Sprite.h" />
+    <ClInclude Include="..\..\Src\SpriteFill.h" />
+    <ClInclude Include="..\..\Src\SpriteFrame.h" />
+    <ClInclude Include="..\..\Src\Shape\Rectangle.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Shape\Shape.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Shape\Line.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shape">
+      <UniqueIdentifier>{47b68bd4-c364-4bb9-9185-376cb00a2365}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

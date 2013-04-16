@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Element.cpp" />
+    <ClCompile Include="..\..\Src\GUI.cpp" />
+    <ClCompile Include="..\..\Src\Root.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Selectors\ContextMenu.cpp">
+      <Filter>Selectors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Selectors\ListBox.cpp">
+      <Filter>Selectors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Selectors\MenuBar.cpp">
+      <Filter>Selectors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Helpers\Drager.cpp">
+      <Filter>Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Containers\DialogBox.cpp">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Containers\GroupBox.cpp">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Controls\ButtonCaption.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Controls\CheckBox.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Controls\EditBox.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Statics\Picture.cpp">
+      <Filter>Statics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Statics\ProgressBar.cpp">
+      <Filter>Statics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Statics\Text.cpp">
+      <Filter>Statics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Controls\ButtonImage.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Controls\Slider.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Containers\TabBar.cpp">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Controls\ScrollBar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Helpers\Cell.cpp">
+      <Filter>Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elements\Selectors\ComboBox.cpp">
+      <Filter>Selectors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Console.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Element.h" />
+    <ClInclude Include="..\..\Src\GUI.h" />
+    <ClInclude Include="..\..\Src\IntegratedElementIds.h" />
+    <ClInclude Include="..\..\Src\Elements\Selectors\ContextMenu.h">
+      <Filter>Selectors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Selectors\ListBox.h">
+      <Filter>Selectors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Selectors\MenuBar.h">
+      <Filter>Selectors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Helpers\Drager.h">
+      <Filter>Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Containers\DialogBox.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Containers\GroupBox.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Controls\ButtonCaption.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Controls\CheckBox.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Controls\EditBox.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Statics\Picture.h">
+      <Filter>Statics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Statics\ProgressBar.h">
+      <Filter>Statics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Statics\Text.h">
+      <Filter>Statics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Controls\ButtonImage.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Controls\Slider.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Containers\TabBar.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Containers\TabPage.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Controls\ScrollBar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elements\Helpers\Cell.h">
+      <Filter>Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Root.h" />
+    <ClInclude Include="..\..\Src\Elements\Selectors\ComboBox.h">
+      <Filter>Selectors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Console.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Extensions">
+      <UniqueIdentifier>{7e751b62-96fc-423c-8c29-8d0629b0e107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Containers">
+      <UniqueIdentifier>{acf6b8a8-a8ad-4ddf-9f74-1d21c7d24f7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{04124b85-8fbc-475d-96c0-1225f5beb3f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Statics">
+      <UniqueIdentifier>{a63bbcfd-9fb6-480d-809d-11b9adf9938b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Selectors">
+      <UniqueIdentifier>{edd12a68-1ea2-45b6-839f-98e6e02c38e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

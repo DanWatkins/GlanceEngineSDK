@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="../../Src/Animation.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="304" topLine="0" />
+	</File>
+	<File name="../../Src/Animation.h" open="0" top="0" tabpos="1">
+		<Cursor position="1054" topLine="0" />
+	</File>
+	<File name="../../Src/Entity.h" open="0" top="0" tabpos="3">
+		<Cursor position="3732" topLine="38" />
+	</File>
+	<File name="../../Src/EntityLoader.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="10567" topLine="261" />
+	</File>
+</CodeBlocks_layout_file>

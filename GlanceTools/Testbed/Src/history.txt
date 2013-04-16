@@ -1,0 +1,7 @@
+Testbed history log
+
+
+---------------------------------------------------------------------------------------------------
+ ### v0.04.0 to v0.105.0 (March 30, 2011 - Present)
+[ADDED] Base UI framework usage concept (v0.04.0)
+[ADDED] Base engine usage to make a walkable world (v0.04.0)

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Testbed" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../../Bin/Bin32/Game" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../Bin/Bin32" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-audio" />
+					<Add option="-lsfml-graphics" />
+					<Add option="-lsfml-window" />
+					<Add option="-lsfml-system" />
+					<Add option="-lboost_filesystem" />
+					<Add option="-lboost_system" />
+					<Add library="../../../../Lib/GlanceWorld-d.a" />
+					<Add library="../../../../Lib/GlanceEntity-d.a" />
+					<Add library="../../../../Lib/GlanceGUI-d.a" />
+					<Add library="../../../../Lib/GlancePhysics-d.a" />
+					<Add library="../../../../Lib/GlanceAsset-d.a" />
+					<Add library="../../../../Lib/GlanceRender2D-d.a" />
+					<Add library="../../../../Lib/GlanceCore-d.a" />
+					<Add library="../../../../Lib/GlanceUtility-d.a" />
+					<Add library="/usr/lib/libsfml-system.so" />
+					<Add library="/usr/lib/libsfml-window.so" />
+					<Add library="/usr/lib/libsfml-graphics.so" />
+					<Add library="/usr/lib/libsfml-audio.so" />
+					<Add library="/usr/lib/libboost_system.so" />
+					<Add library="/usr/lib/libboost_filesystem.so" />
+					<Add library="../../../../Lib/GlanceAudio-d.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../../../../Bin/Bin32/Game" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../Bin/Bin32" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../../../../Lib/GlanceWorld.a" />
+					<Add library="../../../../Lib/GlanceEntity.a" />
+					<Add library="../../../../Lib/GlanceGUI.a" />
+					<Add library="../../../../Lib/GlancePhysics.a" />
+					<Add library="../../../../Lib/GlanceAsset.a" />
+					<Add library="../../../../Lib/GlanceRender2D.a" />
+					<Add library="../../../../Lib/GlanceCore.a" />
+					<Add library="../../../../Lib/GlanceUtility.a" />
+					<Add library="/usr/lib/libsfml-system.so" />
+					<Add library="/usr/lib/libsfml-window.so" />
+					<Add library="/usr/lib/libsfml-graphics.so" />
+					<Add library="/usr/lib/libsfml-audio.so" />
+					<Add library="/usr/lib/libboost_system.so" />
+					<Add library="/usr/lib/libboost_filesystem.so" />
+					<Add library="../../../../Lib/GlanceAudio.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-DBUILD_LINUX" />
+		</Compiler>
+		<Unit filename="../../Src/GUI_ID.h" />
+		<Unit filename="../../Src/Main.cpp" />
+		<Unit filename="../../Src/Main.h" />
+		<Unit filename="../../Src/Menu.cpp" />
+		<Unit filename="../../Src/Menu.h" />
+		<Unit filename="../../Src/history.txt" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

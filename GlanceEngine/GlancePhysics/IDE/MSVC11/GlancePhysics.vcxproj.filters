@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Body.cpp" />
+    <ClCompile Include="..\..\Src\Collision.cpp" />
+    <ClCompile Include="..\..\Src\Environment.cpp" />
+    <ClCompile Include="..\..\Src\Environment_CollisionCheck.cpp" />
+    <ClCompile Include="..\..\Src\Environment_CollisionHandle.cpp" />
+    <ClCompile Include="..\..\Src\Environment_CollisionManagment.cpp" />
+    <ClCompile Include="..\..\Src\Environment_Create.cpp" />
+    <ClCompile Include="..\..\Src\Physics.cpp" />
+    <ClCompile Include="..\..\Src\Body\Box.cpp">
+      <Filter>Body</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Body\SweepBox.cpp">
+      <Filter>Body</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Environment_Partition.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Body.h" />
+    <ClInclude Include="..\..\Src\Collision.h" />
+    <ClInclude Include="..\..\Src\Environment.h" />
+    <ClInclude Include="..\..\Src\Physics.h" />
+    <ClInclude Include="..\..\Src\Body\Box.h">
+      <Filter>Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Body\Cylinder.h">
+      <Filter>Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Body\SweepBox.h">
+      <Filter>Body</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Body">
+      <UniqueIdentifier>{f29708a4-8930-40a7-897f-eb64b2240993}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

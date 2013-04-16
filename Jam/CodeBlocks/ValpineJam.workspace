@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="../../GlanceEngine/GlanceUtility/IDE/CodeBlocks/GlanceUtility.cbp" />
+		<Project filename="../../GlanceEngine/GlanceCore/IDE/CodeBlocks/GlanceCore.cbp" />
+		<Project filename="../../GlanceEngine/GlanceRender2D/IDE/CodeBlocks/GlanceRender2D.cbp" />
+		<Project filename="../../GlanceEngine/GlanceAsset/IDE/CodeBlocks/GlanceAsset.cbp" />
+		<Project filename="../../GlanceEngine/GlanceAudio/IDE/CodeBlocks/GlanceAudio.cbp" />
+		<Project filename="../../GlanceEngine/GlanceGUI/IDE/CodeBlocks/GlanceGUI.cbp" />
+		<Project filename="../../GlanceEngine/GlancePhysics/IDE/CodeBlocks/GlancePhysics.cbp" />
+		<Project filename="../../GlanceEngine/GlanceEntity/IDE/CodeBlocks/GlanceEntity.cbp" />
+		<Project filename="../../GlanceEngine/GlanceWorld/IDE/CodeBlocks/GlanceWorld.cbp" />
+		<Project filename="../../GlanceTools/Testbed/IDE/CodeBlocks/Testbed.cbp" />
+		<Project filename="../../GlanceTools/Resource Editor/IDE/CodeBlocks/Resource Editor.cbp" active="1" />
+	</Workspace>
+</CodeBlocks_workspace_file>

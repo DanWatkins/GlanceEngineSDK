@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GlanceCore" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../../Lib/GlanceCore-d.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../../../../Lib/GlanceCore.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DBUILD_LINUX" />
+		</Compiler>
+		<Unit filename="../../Src/Constants.h" />
+		<Unit filename="../../Src/Debug.cpp" />
+		<Unit filename="../../Src/Debug.h" />
+		<Unit filename="../../Src/Diagnostic.h" />
+		<Unit filename="../../Src/Glance.cpp" />
+		<Unit filename="../../Src/Glance.h" />
+		<Unit filename="../../Src/Input.cpp" />
+		<Unit filename="../../Src/Input.h" />
+		<Unit filename="../../Src/Timer.h" />
+		<Unit filename="../../Src/VideoSettings.h" />
+		<Unit filename="../../Src/Window.cpp" />
+		<Unit filename="../../Src/Window.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

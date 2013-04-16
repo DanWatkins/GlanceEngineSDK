@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Camera.cpp" />
+    <ClCompile Include="..\..\Src\World.cpp" />
+    <ClCompile Include="..\..\Src\WorldLoader.cpp" />
+    <ClCompile Include="..\..\Src\Map\Map.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Map\TileSet.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Camera.h" />
+    <ClInclude Include="..\..\Src\World.h" />
+    <ClInclude Include="..\..\Src\WorldLoader.h" />
+    <ClInclude Include="..\..\Src\Map\TileSet.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Map\Map.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Map">
+      <UniqueIdentifier>{dfc98fac-26fc-4df7-b4e4-fbddc1592257}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

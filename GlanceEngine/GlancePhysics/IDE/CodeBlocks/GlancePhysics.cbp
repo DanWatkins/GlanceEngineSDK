@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GlancePhysics" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../../Lib/GlancePhysics-d.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../../../../Lib/GlancePhysics.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DBUILD_LINUX" />
+		</Compiler>
+		<Unit filename="../../Src/Body.cpp" />
+		<Unit filename="../../Src/Body.h" />
+		<Unit filename="../../Src/Body/Box.cpp" />
+		<Unit filename="../../Src/Body/Box.h" />
+		<Unit filename="../../Src/Body/Circle.h" />
+		<Unit filename="../../Src/Body/SweepBox.cpp" />
+		<Unit filename="../../Src/Body/SweepBox.h" />
+		<Unit filename="../../Src/Collision.cpp" />
+		<Unit filename="../../Src/Collision.h" />
+		<Unit filename="../../Src/Environment.cpp" />
+		<Unit filename="../../Src/Environment.h" />
+		<Unit filename="../../Src/Environment_CollisionCheck.cpp" />
+		<Unit filename="../../Src/Environment_CollisionHandle.cpp" />
+		<Unit filename="../../Src/Environment_CollisionManagment.cpp" />
+		<Unit filename="../../Src/Environment_Create.cpp" />
+		<Unit filename="../../Src/Environment_Partition.cpp" />
+		<Unit filename="../../Src/Physics.cpp" />
+		<Unit filename="../../Src/Physics.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

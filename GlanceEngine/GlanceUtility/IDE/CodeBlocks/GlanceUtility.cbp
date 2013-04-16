@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GlanceUtility" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../../Lib/GlanceUtility-d.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../../../../Lib/GlanceUtility.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DBUILD_LINUX" />
+		</Compiler>
+		<Unit filename="../../Src/Extensions.cpp" />
+		<Unit filename="../../Src/Extensions.h" />
+		<Unit filename="../../Src/HML.cpp" />
+		<Unit filename="../../Src/HML.h" />
+		<Unit filename="../../Src/IO.cpp" />
+		<Unit filename="../../Src/IO.h" />
+		<Unit filename="../../Src/Rect.cpp" />
+		<Unit filename="../../Src/Rect.h" />
+		<Unit filename="../../Src/String.cpp" />
+		<Unit filename="../../Src/String.h" />
+		<Unit filename="../../Src/Utility.h" />
+		<Unit filename="../../Src/Vector2D.h" />
+		<Unit filename="../../Src/Vector3D.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

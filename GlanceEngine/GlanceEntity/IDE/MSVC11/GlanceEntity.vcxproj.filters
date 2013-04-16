@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Animation.cpp" />
+    <ClCompile Include="..\..\Src\AnimationManager.cpp" />
+    <ClCompile Include="..\..\Src\Entity.cpp" />
+    <ClCompile Include="..\..\Src\EntityLoader.cpp" />
+    <ClCompile Include="..\..\Src\EntityManager.cpp" />
+    <ClCompile Include="..\..\Src\Player.cpp" />
+    <ClCompile Include="..\..\Src\Inventory\Inventory.cpp">
+      <Filter>Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Inventory\InventoryGroup.cpp">
+      <Filter>Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Entities\Actor.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Entities\Object.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Entities\Objects\Ammo.cpp">
+      <Filter>Entities\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Entities\Objects\Weapon.cpp">
+      <Filter>Entities\Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Animation.h" />
+    <ClInclude Include="..\..\Src\AnimationManager.h" />
+    <ClInclude Include="..\..\Src\Constants.h" />
+    <ClInclude Include="..\..\Src\Entity.h" />
+    <ClInclude Include="..\..\Src\EntityLoader.h" />
+    <ClInclude Include="..\..\Src\EntityManager.h" />
+    <ClInclude Include="..\..\Src\Player.h" />
+    <ClInclude Include="..\..\Src\Inventory\Inventory.h">
+      <Filter>Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Inventory\InventoryGroup.h">
+      <Filter>Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Entities\Actor.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Entities\Object.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Entities\Objects\Ammo.h">
+      <Filter>Entities\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Entities\Objects\Weapon.h">
+      <Filter>Entities\Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{a5efcf09-e953-4a3b-bc04-248328cf9907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inventory">
+      <UniqueIdentifier>{0f549df3-5629-42d3-aa78-838bcccf9e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Objects">
+      <UniqueIdentifier>{e71f2c27-b61f-4434-986d-ef50369bfde8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

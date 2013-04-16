@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F06DD80-6043-4C34-8460-25A763611316}</ProjectGuid>
+    <RootNamespace>GlanceAsset</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\Lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostC++;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Projects\BoostC++\stage\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)-d</TargetName>
+    <ExtensionsToDeleteOnClean>*.Build</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\Lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <IncludePath>C:\Dev\Projects\SFML\SFML-1.6 - VC2012\include;C:\Dev\Projects\BoostC++;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Projects\BoostC++\stage\lib;$(LibraryPath)</LibraryPath>
+    <ExtensionsToDeleteOnClean>*.Build</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>BUILD_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <BuildLog>
+      <Path>$(IntDir)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>BUILD_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <BuildLog>
+      <Path>$(IntDir)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Console.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Containers\TabBar.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Controls\ButtonCaption.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Controls\ButtonImage.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Controls\CheckBox.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Controls\ScrollBar.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Controls\Slider.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Helpers\Cell.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Selectors\ComboBox.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Selectors\ContextMenu.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Containers\DialogBox.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Helpers\Drager.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Controls\EditBox.cpp" />
+    <ClCompile Include="..\..\Src\Element.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Containers\GroupBox.cpp" />
+    <ClCompile Include="..\..\Src\GUI.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Selectors\ListBox.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Selectors\MenuBar.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Statics\Picture.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Statics\ProgressBar.cpp" />
+    <ClCompile Include="..\..\Src\Root.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Statics\Text.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Console.h" />
+    <ClInclude Include="..\..\Src\Elements\Containers\TabBar.h" />
+    <ClInclude Include="..\..\Src\Elements\Containers\TabPage.h" />
+    <ClInclude Include="..\..\Src\Elements\Controls\ButtonCaption.h" />
+    <ClInclude Include="..\..\Src\Elements\Controls\ButtonImage.h" />
+    <ClInclude Include="..\..\Src\Elements\Controls\CheckBox.h" />
+    <ClInclude Include="..\..\Src\Elements\Controls\ScrollBar.h" />
+    <ClInclude Include="..\..\Src\Elements\Controls\Slider.h" />
+    <ClInclude Include="..\..\Src\Elements\Helpers\Cell.h" />
+    <ClInclude Include="..\..\Src\Elements\Selectors\ComboBox.h" />
+    <ClInclude Include="..\..\Src\Elements\Selectors\ContextMenu.h" />
+    <ClInclude Include="..\..\Src\Elements\Containers\DialogBox.h" />
+    <ClInclude Include="..\..\Src\Elements\Helpers\Drager.h" />
+    <ClInclude Include="..\..\Src\Elements\Controls\EditBox.h" />
+    <ClInclude Include="..\..\Src\Element.h" />
+    <ClInclude Include="..\..\Src\Elements\Containers\GroupBox.h" />
+    <ClInclude Include="..\..\Src\GUI.h" />
+    <ClInclude Include="..\..\Src\IntegratedElementIds.h" />
+    <ClInclude Include="..\..\Src\Elements\Selectors\ListBox.h" />
+    <ClInclude Include="..\..\Src\Elements\Selectors\MenuBar.h" />
+    <ClInclude Include="..\..\Src\Elements\Statics\Picture.h" />
+    <ClInclude Include="..\..\Src\Elements\Statics\ProgressBar.h" />
+    <ClInclude Include="..\..\Src\Elements\Statics\Text.h" />
+    <ClInclude Include="..\..\Src\Root.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

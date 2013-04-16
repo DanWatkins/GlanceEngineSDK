@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="../../Src/Elements/Containers/TabBar.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="4896" topLine="118" />
+	</File>
+	<File name="../../Src/Elements/Controls/ButtonCaption.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="3397" topLine="69" />
+	</File>
+	<File name="../../Src/Elements/Controls/ScrollBar.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="758" topLine="21" />
+	</File>
+	<File name="../../Src/Elements/Controls/ScrollBar.h" open="0" top="0" tabpos="3">
+		<Cursor position="874" topLine="11" />
+	</File>
+	<File name="../../Src/Root.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="24051" topLine="641" />
+	</File>
+</CodeBlocks_layout_file>

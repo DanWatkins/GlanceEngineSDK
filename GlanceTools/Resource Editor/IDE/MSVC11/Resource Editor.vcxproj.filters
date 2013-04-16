@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Main.cpp" />
+    <ClCompile Include="..\..\Src\ResourceEditor.cpp" />
+    <ClCompile Include="..\..\Src\EntityEditor.cpp">
+      <Filter>EntityEditor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Editor.h" />
+    <ClInclude Include="..\..\Src\Main.h" />
+    <ClInclude Include="..\..\Src\ResourceEditor.h" />
+    <ClInclude Include="..\..\Src\SubEditor.h" />
+    <ClInclude Include="..\..\Src\EntityEditor.h">
+      <Filter>EntityEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\eid.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\Src\history.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="EntityEditor">
+      <UniqueIdentifier>{b7286861-d991-4f11-87c2-f6cf8f2f3975}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

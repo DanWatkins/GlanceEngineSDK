@@ -1,0 +1,10 @@
+Glance Resource Editor - History Log
+
+
+---------------------------------------------------------------------------------------------------
+ ### v0.0.1 to v0.5.0 (February 12, 2013 - Present)
+
+[ADDED] Proper interface construction for all types of entities (v0.0.4) (2/22/13)
+[ADDED] Modularized the editing section for entity data. It works for different types of entities (Actor, Object, etc.) (v0.0.3) (2/17/13)
+[ADDED] Template entity loading and list population (v0.0.2) (2/14/13)
+[ADDED] Base architecture for the editor (v0.0.1) (2/13/13)

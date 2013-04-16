@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GlanceRender2D" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../../Lib/GlanceRender2D-d.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../../../../Lib/GlanceRender2D.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DBUILD_LINUX" />
+		</Compiler>
+		<Unit filename="../../Src/Console.cpp" />
+		<Unit filename="../../Src/Console.h" />
+		<Unit filename="../../Src/Font.cpp" />
+		<Unit filename="../../Src/Font.h" />
+		<Unit filename="../../Src/Render2D.h" />
+		<Unit filename="../../Src/Shape/Line.cpp" />
+		<Unit filename="../../Src/Shape/Line.h" />
+		<Unit filename="../../Src/Shape/Rectangle.cpp" />
+		<Unit filename="../../Src/Shape/Rectangle.h" />
+		<Unit filename="../../Src/Shape/Shape.h" />
+		<Unit filename="../../Src/Sprite.cpp" />
+		<Unit filename="../../Src/Sprite.h" />
+		<Unit filename="../../Src/SpriteFill.cpp" />
+		<Unit filename="../../Src/SpriteFill.h" />
+		<Unit filename="../../Src/SpriteFrame.cpp" />
+		<Unit filename="../../Src/SpriteFrame.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
