@@ -8,18 +8,4 @@
 
 namespace getb
 {
-	void Menu::BuildInterface(WeakPtr<gui::Root> root)
-	{
-		mRoot = root;
-
-		if (!mRoot.expired())
-		{
-
-		}
-	}
-
-
-	void Menu::Update()
-	{
-	}
 };

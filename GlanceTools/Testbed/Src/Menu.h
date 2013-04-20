@@ -19,8 +19,6 @@ namespace getb
 	public:
 		Menu() {}
 
-		void BuildInterface(WeakPtr<gui::Root> root);
-		void Update();
 	};
 };
 

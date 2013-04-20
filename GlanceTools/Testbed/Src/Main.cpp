@@ -98,7 +98,29 @@ void BuildInterface()
 {
 	using namespace gui;
 
-	root.CreateDialogBox(1, -1, Vector2D<int>(200,100), 400, 250, "Create New World");
+
+
+	root.CreateDialogBox(123123, -1, Vector2D<int>(40,60), 500, 400, "Dialog Box");
+		WeakPtr<TabBar> tabBar = root.CreateTabBar(26, 123123, Vector2D<int>(3, 40), 494, 357);
+			WeakPtr<TabPage> page1 = tabBar.lock()->AddPage("Tab Page 1");
+				WeakPtr<GroupBox> gbox1 = root.CreateGroupBox(325125, page1, Vector2D<int>(10,40), 474, 307, "Groupbox");
+					root.CreateButtonCaption(572389571094, gbox1, Vector2D<int>(10,15), 120, 24, "Button");
+					root.CreateCheckBox(93572915, gbox1, Vector2D<int>(90,60), "Checkbox");
+					root.CreateEditBox(25923579, gbox1, Vector2D<int>(10,95), 120, 24, "Edit Box");
+					root.CreateSlider(253820, gbox1, Vector2D<int>(10,140), 120);
+
+				WeakPtr<ComboBox> cbox123 = root.CreateComboBox(235235, gbox1, Vector2D<int>(160,15), 200);
+					cbox123.lock()->AddCell("ComboBox - Option 1", "");
+				WeakPtr<ListBox> lbox123 = root.CreateListBox(325325, gbox1, Vector2D<int>(160,50), 200, 200);
+					for (int n=0; n<30; n++)
+						lbox123.lock()->AddCell(String()+"Cell "+ToString(n), ToString(n));
+
+					WeakPtr<ProgressBar> pbar123 = root.CreateProgressBar(153235, gbox1, Vector2D<int>(10,267), 454, 30, 72.0);
+					pbar123.lock()->SetPercent(72.0);
+
+			WeakPtr<TabPage> page2 = tabBar.lock()->AddPage("Tab Page 2");
+			WeakPtr<TabPage> page3 = tabBar.lock()->AddPage("Tab Page 3");
+
 	WeakPtr<MenuBar> menuBar = root.CreateMenuBar(2, -1, Vector2D<int>(0,0), app.GetVideoSettings()->width);
 		WeakPtr<ContextMenu> fileMenu = menuBar.lock()->AddMenu("File");
 			WeakPtr<ContextMenu> newMenu = fileMenu.lock()->AddItem("New");
@@ -108,7 +130,7 @@ void BuildInterface()
 			fileMenu.lock()->AddItem("Save");
 			fileMenu.lock()->AddItem("Save As...");
 			fileMenu.lock()->AddItem("Save All");
-			fileMenu.lock()->AddItem("Export Resource Pack");
+			fileMenu.lock()->AddItem("Export Resource  ");
 			fileMenu.lock()->AddItem("Exit");
 
 		WeakPtr<ContextMenu> editMenu = menuBar.lock()->AddMenu("Edit");
@@ -123,27 +145,6 @@ void BuildInterface()
 			editMenu.lock()->AddItem("Deselect All");
 			editMenu.lock()->AddItem("Delete");
 
-	WeakPtr<ContextMenu> menu1 = root.CreateContextMenu(22, -1, Vector2D<int>(0,0), 40, 100, "LOL", Rect<int>(0, 0, 400, 400));
-	menu1.lock()->AddItem("Howdy");
-	menu1.lock()->AddItem("Die");
-	menu1.lock()->AddItem("Leave");
-
-	WeakPtr<ContextMenu> menu2 = root.CreateContextMenu(23, -1, Vector2D<int>(0,0), 40, 100, "HAHA", Rect<int>(0, 0, 400, 400));
-	menu2.lock()->AddItem("Howdy2");
-	menu2.lock()->AddItem("Die2");
-	menu2.lock()->AddItem("Leave2");
-
-	
-
-	
-
-	WeakPtr<TabBar> tabBar = root.CreateTabBar(26, 1, Vector2D<int>(10, 40), 380, 200);
-		WeakPtr<TabPage> page1 = tabBar.lock()->AddPage("Page 1");
-			root.CreateSlider(26101, page1, Vector2D<int>(10,100), 200);
-		WeakPtr<TabPage> page2 = tabBar.lock()->AddPage("Page 2");
-			root.CreateButtonImage(26201, page2, Vector2D<int>(10,100), 16, 16, "x_button.bmp");
-		WeakPtr<TabPage> page3 = tabBar.lock()->AddPage("Page 3");
-			root.CreateCheckBox(26301, page3, Vector2D<int>(10,50), "Fullscreen");
 }
 
 
@@ -155,7 +156,7 @@ bool ge::ClientInit()
 	LoadConfigurationFile();
 
 	root.Init(&app);
-	//BuildInterface();
+	BuildInterface();
 	root.GetDefaultText().lock()->SetRelPos(Vector2D<int>(10,10));
 
 	level.Init();
@@ -234,9 +235,8 @@ void ge::ClientLoop()
 	if (app.GetWasResized())
 		camera.SetViewSize(app.GetWidth(), app.GetHeight());
 
-	level.Update(app.GetLastUpdateTime());
-
-	camera.Draw();
+	//level.Update(app.GetLastUpdateTime());
+	//camera.Draw();
 
 	root.Update();
 	
