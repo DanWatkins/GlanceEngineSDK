@@ -44,6 +44,7 @@
 #define DIR_ASSET_GRAPHICS              "../Resources/Assets/Graphics/"
 #define DIR_ASSET_ANIMATIONS			"../Resources/Assets/Animations/"
 #define DIR_TILESETS                    "../Resources/Tilesets/"
+#define DIR_WORLDS						"../Worlds/"
 
 
 namespace ge

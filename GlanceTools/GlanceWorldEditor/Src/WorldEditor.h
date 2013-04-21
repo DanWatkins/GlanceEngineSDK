@@ -17,7 +17,8 @@ namespace ge
 		{
 		private:
 			gui::Root *mRoot;
-			world::World *mWorld;
+			SharedPtr<world::World> mWorld;
+			SharedPtr<world::Camera> mCamera;
 
 			//element shortcuts
 			WeakPtr<ContextMenu> mFileMenu;
@@ -31,6 +32,9 @@ namespace ge
 
 			void Init();
 			void Update();
+
+			void LoadWorld(String worldPath);
+			void _UpdateScrolling();
 
 			gui::Root *GetRoot() { return mRoot; }
 		};

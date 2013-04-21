@@ -13,8 +13,10 @@ namespace ge
 {
 	namespace gwe
 	{
-		const int EID_MENU_BAR_MAIN		= 1000010000;
-			const int EID_OPEN_DIALOG	= 1000011000;
+		const int EID_MENU_BAR_MAIN						= 1000010000;
+			const int EID_OPEN_DIALOG					= 1000011000;
+				const int EID_OPEN_WORLD_LISTBOX		= 1000011100;
+				const int EID_OPEN_WORLD_BUTTON			= 1000011200;
 	};
 };
 
