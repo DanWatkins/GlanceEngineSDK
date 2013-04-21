@@ -53,6 +53,7 @@ namespace ge
 			WeakPtr<ContextMenu> GetItem(int n);
 			WeakPtr<ContextMenu> GetSelectedItem() { return GetItem(mSelectedItem); }
 			String GetSelectedCaption();
+			void ClearSelectedCaption() { mSelectedItem = -1; }
 			int GetItemCount();
 			WeakPtr<ContextMenu> AddItem(String name);
 			int GetItemWidth();

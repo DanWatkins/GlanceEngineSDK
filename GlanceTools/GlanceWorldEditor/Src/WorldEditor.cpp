@@ -29,7 +29,10 @@ namespace ge
 
 		void WorldEditor::_CreateOpenDialog()
 		{
-			mOpenDialog = mRoot->CreateDialogBox(EID_OPEN_DIALOG, -1, Vector2D<int>(50,50), 300, 150, "Open World");
+			int width = 300;
+			int height = 150;
+			Vector2D<int> centeredPosition(mRoot->GetWindow()->GetWidth()/2-width/2, mRoot->GetWindow()->GetHeight()/2-height/2);
+			mOpenDialog = mRoot->CreateDialogBox(EID_OPEN_DIALOG, -1, centeredPosition, width, height, "Open World");
 		}
 
 
@@ -43,6 +46,8 @@ namespace ge
 		{
 			if (mFileMenu.lock()->GetSelectedCaption() == "Open"  &&  mOpenDialog.expired())
 				_CreateOpenDialog();
+
+			mFileMenu.lock()->ClearSelectedCaption();
 		}
 	};
 };
