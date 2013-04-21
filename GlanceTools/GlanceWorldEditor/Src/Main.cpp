@@ -10,6 +10,7 @@ using namespace ge;
 
 Window app;
 Root root;
+gwe::WorldEditor worldEditor(&root);
 SharedPtr<Console> console;
 
 /*=============================================================================
@@ -60,17 +61,7 @@ int main()
 bool ge::ClientInit()
 {
 	root.Init(&app);
-
-	using namespace gui;
-
-	WeakPtr<MenuBar> menuBar = root.CreateMenuBar(gwe::EID_MENU_BAR_MAIN, -1, Vector2D<int>(), app.GetWidth());
-		WeakPtr<ContextMenu> cm1 = menuBar.lock()->AddMenu("File");
-			cm1.lock()->AddItem("New");
-			cm1.lock()->AddItem("Open");
-			cm1.lock()->AddItem("Exit");
-		WeakPtr<ContextMenu> cm2 = menuBar.lock()->AddMenu("Help");
-			cm2.lock()->AddItem("About");
-
+	worldEditor.Init();
 
 	return true;
 }
@@ -83,6 +74,7 @@ bool ge::ClientInit()
 void ge::ClientLoop()
 {
 	root.Update();
+	worldEditor.Update();
 	root.Draw();
 	console->Draw();
 }

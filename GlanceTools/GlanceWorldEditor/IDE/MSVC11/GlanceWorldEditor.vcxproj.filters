@@ -2,10 +2,12 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />
+    <ClCompile Include="..\..\Src\WorldEditor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Src\Main.h" />
     <ClInclude Include="..\..\Src\Eid.h" />
+    <ClInclude Include="..\..\Src\WorldEditor.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\History.txt" />

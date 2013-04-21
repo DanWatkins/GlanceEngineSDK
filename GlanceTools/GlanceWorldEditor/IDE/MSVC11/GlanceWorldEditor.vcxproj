@@ -85,10 +85,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Main.cpp" />
+    <ClCompile Include="..\..\Src\WorldEditor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Src\Eid.h" />
     <ClInclude Include="..\..\Src\Main.h" />
+    <ClInclude Include="..\..\Src\WorldEditor.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\History.txt" />

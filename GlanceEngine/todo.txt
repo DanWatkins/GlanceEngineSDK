@@ -1,4 +1,6 @@
 
+- Add method to the menu bar/context menu that calls a delegate object whenever a menu item is selected
+- Overload a constructor for ge::String so that int8, int16, int32, int64, float, and double can be used in strings without using ToString()
 X GUI Root Create methods should return a WeakPtr<T> to the element they create (T should be the type of element created)
 X Add a typedef or something to abbreviate std::tr1::dynamic_pointer_cast<T>() to something like DynamicPtrCast<T>()
 X Fix the messed up sprite frames on the Linux and MSVC9 builds

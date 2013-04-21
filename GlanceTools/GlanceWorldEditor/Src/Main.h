@@ -17,12 +17,12 @@ namespace ge
 {
 	namespace gwe
 	{
-		String gGweVersion = "0.0.1";
+		const String gGweVersion = "0.0.1";
 	};
 };
 
 #include "Eid.h"
-
+#include "WorldEditor.h"
 
 
 #endif
