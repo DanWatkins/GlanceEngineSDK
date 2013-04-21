@@ -23,7 +23,7 @@ namespace ge
 	bool Font::LoadFontFromFile(String fontname)
 	{
 		//prefix the font directory
-		fontname = Combine(DIR_FONTS, fontname);
+		fontname = ToString(DIR_FONTS)+fontname;
 
 		unsigned char buffer[512];
 

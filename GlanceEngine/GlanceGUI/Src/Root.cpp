@@ -36,7 +36,7 @@ namespace ge
 
 			//load all the asset directories listied in the config.ini file
 			std::fstream file;
-			file.open( Combine(DIR_GUI, "config.ini" ).GetChar());
+			file.open( (ToString(DIR_GUI)+"config.ini").GetChar());
 			if (file.is_open())
 			{
 				while (!file.eof())
@@ -349,7 +349,7 @@ namespace ge
 			{
 				if (!GetElement(id).expired())
 				{
-					gDebug.Error( Combine("Could not make the requested Text bcause an element with id=", ToString(id), " alredy exists!") );
+					gDebug.Error(String("Could not make the requested Text bcause an element with id=")+id+" alredy exists!");
 					return false;
 				}
 			}
@@ -359,7 +359,7 @@ namespace ge
 			{
 				if (!GetElement(id).expired())
 				{
-					gDebug.Error( Combine("Could not make the requested Text bcause an element with id=", ToString(id), " alredy exists!") );
+					gDebug.Error(String("Could not make the requested Text bcause an element with id=")+id+" alredy exists!");
 					return false;
 				}
 			}
@@ -369,7 +369,7 @@ namespace ge
 			{
 				if (!parent.lock()->GetChild(id).expired())
 				{
-					gDebug.Error( Combine("Could not make the requested Text bcause an element with id=", ToString(id), " alredy exists!") );
+					gDebug.Error(String("Could not make the requested Text bcause an element with id=")+id+" alredy exists!");
 					return false;
 				}
 			}
@@ -383,7 +383,7 @@ namespace ge
 			if (_ValidId(elementId, parent))
 			{
 				if (!element.lock()->_Init(elementId, parent, this, pos, width, height, GetWindow()))
-					gDebug.Error(String()+"Error initializing element with id"+ToString(elementId));
+					gDebug.Error(String()+"Error initializing element with id"+elementId);
 
 				//add the new element to the parent (or root)
 				if (!parent.expired())
@@ -393,7 +393,7 @@ namespace ge
 
 				//post initialize
 				if (!element.lock()->_PostInit())
-					gDebug.Error(String()+"Error post-initializing element with id"+ToString(elementId));
+					gDebug.Error(String()+"Error post-initializing element with id"+elementId);
 
 				element.lock()->_UpdateAssets();
 			}

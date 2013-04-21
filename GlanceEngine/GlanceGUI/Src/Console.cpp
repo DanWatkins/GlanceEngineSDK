@@ -35,14 +35,14 @@ namespace ge
 
 		//initialize the background image
 		mBackground.SetWindow(window);
-		mBackground.LoadImageFromFile(Combine(DIR_GUI,"console_bkg.png"));
+		mBackground.LoadImageFromFile(ToString(DIR_GUI)+"console_bkg.png");
 		mBackground.SetColor(Color(0, 0, 0, 128));
 		mBackground.SetSize(width, height);
 
 		//initialize the input box image
 		if (mFont)
 		{
-			mInputBox.Init(width, mFont->GetCharHeightPx()+mBoxPadding, Combine(DIR_GUI,"console_box/"), window, false);
+			mInputBox.Init(width, mFont->GetCharHeightPx()+mBoxPadding, ToString(DIR_GUI)+"console_box/", window, false);
 			mInputBox.SetPos(0, height-(mFont->GetCharHeightPx()+mBoxPadding));
 		}
 	}

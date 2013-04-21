@@ -42,10 +42,10 @@ namespace ge
                         mName = file.SeekGetToken();
                     else if (file.TokenIsDeclaration("#image"))
                     {
-                        if (!mImage.LoadImageFromFile( Combine(DIR_TILESETS, file.SeekGetToken()) ))
+                        if (!mImage.LoadImageFromFile(String(DIR_TILESETS)+file.SeekGetToken()))
                         {
                             error = true;
-                            gDebug.Error( Combine("Could not load tileset image for the ", mName, " tileset") );
+                            gDebug.Error(String("Could not load tileset image for the ")+mName+" tileset");
                         }
                     }
                     else if (file.TokenIsDeclaration("#tileWidth"))

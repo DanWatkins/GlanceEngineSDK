@@ -49,7 +49,7 @@ namespace ge
 			iter++;
 		}
 
-		gDebug.Error(String()+"Asset \""+id+"\" could not be found in AssetManager instance at 0x"+ToString(this));
+		gDebug.Error(String()+"Asset \""+id+"\" could not be found in AssetManager instance at 0x"+(int)this);
 
 		return NULL;
 	}
@@ -67,7 +67,7 @@ namespace ge
 			if (typeid(*GetAsset(id)) == typeid(Image))
 				return (Image*)GetAsset(id);
 
-			gDebug.Error(String()+"Asset \""+id+"\" is not an Image object in AssetManager instance at 0x"+ToString(this));
+			gDebug.Error("Asset \""+id+"\" is not an Image object in AssetManager instance at 0x"+this);
 		}
 		
 

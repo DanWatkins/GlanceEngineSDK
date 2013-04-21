@@ -1,1 +1,0 @@
-start ./Jam/MSVC11/GlanceSDK.sln

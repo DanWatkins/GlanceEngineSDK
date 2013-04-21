@@ -284,7 +284,7 @@ namespace ge
             path.Remove(0, path.Size()-1);
 
             if (path != "/")
-				path.PushBack( Combine("/", "") );
+				path.PushBack( String("/")+"" );
 
 			return path;
         }

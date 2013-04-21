@@ -246,7 +246,7 @@ namespace ge
 			//create a body for every collidable tile
 			physics::Environment *env = mWorld->GetPhysicsEnvironment();
 
-			gDebug.Print(String()+"Printing out tile groups (total="+ToString(tileGroups.size())+")");
+			gDebug.Print(String()+"Printing out tile groups (total="+(int)tileGroups.size()+")");
 
 			std::vector<TileGroup>::iterator iter = tileGroups.begin();
 			while (iter != tileGroups.end())

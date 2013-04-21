@@ -31,7 +31,7 @@ namespace ge
 			//initialize 
 			if (!mImgUp.Init( GetWidth(), GetHeight(), GetWindow()) ||
 				!((FrameImage*)GetRoot()->GetAssetManager()->GetAsset("button_up"))->PassImagesToSprite(&mImgUp) ||
-				!mImgDown.Init( GetWidth(), GetHeight(), Combine(DIR_GUI, GUI_DIR_BUTTON, "down/"), GetWindow()) ||
+				!mImgDown.Init( GetWidth(), GetHeight(), ToString(DIR_GUI)+GUI_DIR_BUTTON+"down/", GetWindow()) ||
 				!((FrameImage*)GetRoot()->GetAssetManager()->GetAsset("button_down"))->PassImagesToSprite(&mImgDown)
 			)
 				error = true;

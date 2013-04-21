@@ -17,8 +17,9 @@ namespace ge
 	String GetVersionText()
 	{
 		if (ge_VERSION_MINOR > 9)
-			return Combine("v", ToString(ge_VERSION_MAJOR), ".", ToString(ge_VERSION_MINOR), ".", ToString(ge_VERSION_REVISION));
+			return String("v")+ge_VERSION_MAJOR+"."+ge_VERSION_MINOR+"."+ge_VERSION_REVISION;
 
-		return Combine("v", ToString(ge_VERSION_MAJOR), ".0", ToString(ge_VERSION_MINOR), ".", ToString(ge_VERSION_REVISION));
+
+		return String("v")+ge_VERSION_MAJOR+".0"+ge_VERSION_MINOR+"."+ge_VERSION_REVISION;
 	}
 };

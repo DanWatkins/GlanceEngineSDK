@@ -104,7 +104,7 @@ namespace ge
 			}
 
 			if (unique == false)
-				gDebug.Warning(String()+"Adding a tab page with name="+caption.GetStd()+" but there is already a tab page with that name for element id="+ToString(GetId()));
+				gDebug.Warning(String()+"Adding a tab page with name="+caption.GetStd()+" but there is already a tab page with that name for element id="+GetId());
 
 			mIdTrack++;
 			WeakPtr<TabPage> newPage = GetRoot()->_CreateTabPage(-mIdTrack, DynamicPtrCast<TabBar>(_GetAsWeakPtr().lock()), caption);

@@ -22,7 +22,6 @@ namespace ge
     private:
         std::string mString;				//actual content of the String
 
-
     public:
         //constructor and destructor
         String() { mString = ""; }
@@ -44,7 +43,6 @@ namespace ge
         bool operator !=(String cstr);
         void operator +=(String cstr);
         void operator -=(String cstr);
-		String operator +(String cstr);
         String operator [](int n);
 
         //general
@@ -88,10 +86,19 @@ namespace ge
         return String(oss.str());
     }
 
+
 	/*=============================================================================
 	-- Combines all of the specified strings into one big string.
 	=============================================================================*/
-    String Combine(String s1, String s2, String s3="", String s4="", String s5="", String s6="");
+    //String Combine(String s1, String s2, String s3="", String s4="", String s5="", String s6="");
+
+
+	//global String + operator
+	String operator+(String lhs, String rhs);
+
+
+	template <class A>
+	String operator +(String lhs, A number) { return lhs+ToString(number); }
 };
 
 #endif

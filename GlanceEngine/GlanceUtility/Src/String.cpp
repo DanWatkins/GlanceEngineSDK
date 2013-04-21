@@ -11,15 +11,8 @@ namespace ge
     /*=============================================================================
       Constructor for String.
     =============================================================================*/
-    String::String(std::string str)
-    {
-        mString	= str;
-    }
-
-	String::String(const char *c)
-	{
-		mString = c;
-	}
+    String::String(std::string str) { mString = str; }
+	String::String(const char *c) { mString = c; }
 
 
     /*=============================================================================
@@ -80,11 +73,6 @@ namespace ge
     {
         Remove(str, 1);
     }
-
-	String String::operator +(String cstr)
-	{
-		return mString+cstr.GetStd();
-	}
 
 
     /*=============================================================================
@@ -491,5 +479,12 @@ namespace ge
 		}
 
 		return Size()-extraBackSpaces;
+	}
+
+
+	String operator+(String lhs, String rhs)
+	{
+		lhs.PushBack(rhs);
+		return lhs;
 	}
 };
