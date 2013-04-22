@@ -91,6 +91,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Src\Console.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Containers\Panel.cpp" />
     <ClCompile Include="..\..\Src\Elements\Containers\TabBar.cpp" />
     <ClCompile Include="..\..\Src\Elements\Controls\ButtonCaption.cpp" />
     <ClCompile Include="..\..\Src\Elements\Controls\ButtonImage.cpp" />
@@ -115,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Src\Console.h" />
+    <ClInclude Include="..\..\Src\Elements\Containers\Panel.h" />
     <ClInclude Include="..\..\Src\Elements\Containers\TabBar.h" />
     <ClInclude Include="..\..\Src\Elements\Containers\TabPage.h" />
     <ClInclude Include="..\..\Src\Elements\Controls\ButtonCaption.h" />

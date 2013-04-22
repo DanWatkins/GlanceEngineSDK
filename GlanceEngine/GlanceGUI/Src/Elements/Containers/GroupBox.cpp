@@ -49,6 +49,8 @@ namespace ge
 												GUI_GROUPBOX_CAPTION_OFFSET-mImgBorder.GetCornerWidth()+text.lock()->GetWidth()+GUI_GROUPBOX_CAPTION_PAD_LEFT );
 			}
 
+			mImgBorder.SetShowCenter(false);
+
 			return true;
 		}
 

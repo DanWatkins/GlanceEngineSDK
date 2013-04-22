@@ -4,7 +4,8 @@ This is a log of everything (most of what happended, the main point) added, chan
 
 ---------------------------------------------------------------------------------------------------
  ###### v0.25.2 to v0.30.0 (March 3, 2013 - present)
-[ADDED} Selected menu can be cleared for ContextMenus (v0.27.0) (4/21/2013)
+[ADDED] Panel gui element (v0.27.0) (4/21/2013)
+[ADDED] Selected menu can be cleared for ContextMenus (v0.27.0) (4/21/2013)
 [ADDED] Globally overloaded + operator for String so now someString+1254 is a valid operation without having to write someString+ToString(1254) (v0.27.0) (4/21/2013)
 [FIXED] Console now has an embedded gui::Root object inside of it (v0.26.8)
 [FIXED] Issue with ScrollBar I was to lazy to test for in the last iteration (v0.26.8)

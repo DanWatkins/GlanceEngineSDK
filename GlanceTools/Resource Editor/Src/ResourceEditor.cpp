@@ -22,12 +22,20 @@ namespace ge
 					fileMenu.lock()->AddItem("Reload (Ctrl+R)");
 					fileMenu.lock()->AddItem("Save (Ctrl+S)");
 					fileMenu.lock()->AddItem("Exit (Alt+F4)");
+				WeakPtr<ContextMenu> editMenu = menuBar.lock()->AddMenu("Edit");
+				WeakPtr<ContextMenu> viewMenu = menuBar.lock()->AddMenu("View");
+				WeakPtr<ContextMenu> helpMenu = menuBar.lock()->AddMenu("Help");
+
 
 			WeakPtr<TabBar> tabBar = GetRoot()->CreateTabBar(EID_RESOURCE_TAB_BAR, EID_ROOT, Vector2D<int>(0,40), window->GetWidth(), window->GetHeight()-40);
-				WeakPtr<TabPage> entityPage = tabBar.lock()->AddPage("Entity");
-				mEntityEditor = SharedPtr<EntityEditor>(new EntityEditor(GetRoot(), this, entityPage));
-				mEntityEditor->CreateUserInterface();
-				mEntityEditor->LoadContent();
+				WeakPtr<TabPage> entityPage = tabBar.lock()->AddPage("Entities");
+					mEntityEditor = SharedPtr<EntityEditor>(new EntityEditor(GetRoot(), this, entityPage));
+					mEntityEditor->CreateUserInterface();
+					mEntityEditor->LoadContent();
+				WeakPtr<TabPage> graphicsPage = tabBar.lock()->AddPage("Graphics");
+				WeakPtr<TabPage> soundsPage = tabBar.lock()->AddPage("Sounds");
+				WeakPtr<TabPage> animationsPage = tabBar.lock()->AddPage("Animations");
+				WeakPtr<TabPage> tilesetsPage = tabBar.lock()->AddPage("Tilesets");
 		}
 
 

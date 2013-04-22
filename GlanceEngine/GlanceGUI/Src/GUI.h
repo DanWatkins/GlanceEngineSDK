@@ -21,6 +21,7 @@ namespace ge
 
 		class DialogBox;
 		class GroupBox;
+		class Panel;
 
 		class Drager;
 		class Cell;
@@ -118,6 +119,7 @@ namespace ge
 
 #include "Elements/Containers/DialogBox.h"
 #include "Elements/Containers/GroupBox.h"
+#include "Elements/Containers/Panel.h"
 #include "Elements/Containers/TabBar.h"
 #include "Elements/Containers/TabPage.h"
 

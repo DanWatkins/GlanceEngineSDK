@@ -800,5 +800,21 @@ namespace ge
 
 			return CreateScrollBar(id, sParent, pos, SCROLL_BAR_BUTTON_SIZE, height, VERTICAL);
 		}
+
+
+		WeakPtr<Panel> Root::CreatePanel(int id, WeakPtr<Element> parent, Vector2D<int> pos, int width, int height)
+		{
+			SharedPtr<Panel> panel(new Panel);
+
+			return DynamicPtrCast<Panel>(_ProcessNewElement(panel, id, parent, pos, width, height).lock());
+		}
+
+
+		WeakPtr<Panel> Root::CreatePanel(int id, int parent, Vector2D<int> pos, int width, int height)
+		{
+			WeakPtr<Element> sParent = GetElement(parent).lock();
+
+			return CreatePanel(id, sParent, pos, width, height);
+		}
 	};
 };

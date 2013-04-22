@@ -59,6 +59,9 @@
       <Filter>Selectors</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Src\Console.cpp" />
+    <ClCompile Include="..\..\Src\Elements\Containers\Panel.cpp">
+      <Filter>Containers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Src\Element.h" />
@@ -123,6 +126,9 @@
       <Filter>Selectors</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Src\Console.h" />
+    <ClInclude Include="..\..\Src\Elements\Containers\Panel.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Extensions">

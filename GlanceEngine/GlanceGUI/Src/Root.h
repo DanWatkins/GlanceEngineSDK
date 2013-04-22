@@ -132,6 +132,9 @@ namespace ge
 			WeakPtr<ScrollBar> CreateScrollBar(int id, int parent, Vector2D<int> pos, int width, int height, SpanDirection spanDirection);
 			WeakPtr<ScrollBar> CreateScrollBarHorizontal(int id, int parent, Vector2D<int> pos, int width);
 			WeakPtr<ScrollBar> CreateScrollBarVertical(int id, int parent, Vector2D<int> pos, int height);
+
+			WeakPtr<Panel> CreatePanel(int id, WeakPtr<Element> parent, Vector2D<int> pos, int width, int height);
+			WeakPtr<Panel> CreatePanel(int id, int parent, Vector2D<int> pos, int width, int height);
 		};
 	};
 }

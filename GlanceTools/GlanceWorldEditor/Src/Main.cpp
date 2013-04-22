@@ -19,12 +19,12 @@ SharedPtr<Console> console;
 int main()
 {
 	VideoSettings *videoSettings = app.GetVideoSettings();
-	videoSettings->title = String()+"Glance Resource Editor "+gwe::gGweVersion+" - (GE: "+GetVersionText()+")";
+	videoSettings->title = String()+"Glance World Editor "+gwe::gGweVersion+" - (GE: "+GetVersionText()+")";
 	videoSettings->verticalSync = true;
 	videoSettings->allowResize = true;
 
 	app.Init("Glance World Editor");
-	app.SetBackgroundColor(gWhite);
+	app.SetBackgroundColor(gGray);
 
 	console = SharedPtr<Console>(new Console);
 	console->Init(app.GetWidth(), app.GetHeight()/2.5, &app);

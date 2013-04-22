@@ -97,12 +97,16 @@ namespace ge
 			mCamera->SetViewSize(mRoot->GetWindow()->GetWidth(), mRoot->GetWindow()->GetHeight()-30);
 			mCamera->SetScreenPos(0,30);
 
-			WeakPtr<GroupBox> gbox = mRoot->CreateGroupBox(1253, -1, Vector2D<int>(0,30), 160, mRoot->GetWindow()->GetHeight(), "Tileset");
+			mTilesetPanel = mRoot->CreatePanel(1253, -1, Vector2D<int>(0,24), 160, mRoot->GetWindow()->GetHeight()-24);
+			mRoot->CreateScrollBarVertical(1254, mTilesetPanel.lock()->GetId(), Vector2D<int>(141,3), mRoot->GetWindow()->GetHeight()-24-6);
 		}
 
 		void WorldEditor::_UpdateScrolling()
 		{
-			double SP = 2.5;
+			if (!mCamera)
+				return;
+
+			double SP = 7.5;
 			#define DIAG 0.7071067811865475*SP
 
 			bool up = mRoot->GetWindow()->GetInput()->GetKeyState(GK_W, KEY_DOWN);
