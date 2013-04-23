@@ -29,10 +29,8 @@ namespace ge
 	/*=============================================================================
 	-- Version infromation.
 	=============================================================================*/
-	volatile const int ge_VERSION_MAJOR = 0;
-	volatile const int ge_VERSION_MINOR = 27;
-	volatile const int ge_VERSION_REVISION = 0;
-	String GetVersionText();
+	const String gEngineVersion = "0.3.0";
+	const String gSDKVersion = "0.3.0";
 };
 
 

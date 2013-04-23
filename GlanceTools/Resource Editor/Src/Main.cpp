@@ -18,7 +18,7 @@ SharedPtr<Console> console;
 int main()
 {
 	VideoSettings *videoSettings = app.GetVideoSettings();
-	videoSettings->title = String()+"Glance Resource Editor "+gre::GetVersionText()+" - (GE: "+GetVersionText()+")";
+	videoSettings->title = String()+"Glance Resource Editor "+gre::GetVersionText()+" - (GE: "+gEngineVersion+")";
 	videoSettings->verticalSync = true;
 	videoSettings->allowResize = true;
 
