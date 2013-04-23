@@ -152,6 +152,7 @@ namespace ge
 				int endX = GetWidth();
 				short currentLayer1Criteria = -1; //refers to the layer1 property of the Tile class. (all tiles in a group must have the same one)
 				bool endGroup = false;
+				bool collidable = false;
 
 				for (int y=0; (y<GetHeight() && !endGroup); y++)
 				{
@@ -214,6 +215,8 @@ namespace ge
 						iter = mTileData.begin();
 						iter += (x+GetWidth()*y)-1;
 
+						collidable = (*iter).GetCollidable();
+
 						if (x == GetWidth()  &&  (*iter).GetLayer1() == currentLayer1Criteria)
 							endX = x;
 						else
@@ -228,6 +231,7 @@ namespace ge
 				TileGroup newGroup;
 				newGroup.rect = currentGroup;
 				newGroup.layer1 = currentLayer1Criteria;
+				newGroup.collidable = collidable;
 				tileGroups.push_back(newGroup);
 			}
 
@@ -251,7 +255,13 @@ namespace ge
 			std::vector<TileGroup>::iterator iter = tileGroups.begin();
 			while (iter != tileGroups.end())
 			{
-				env->CreateBox((*iter).rect.GetWidth(), (*iter).rect.GetHeight(), 1.0+physics::MARGIN_OF_ERROR,
+				if ((*iter).collidable == false)
+				{
+					env->CreateBox((*iter).rect.GetWidth(), (*iter).rect.GetHeight(), 1.0+physics::MARGIN_OF_ERROR,
+								Vector3D<double>((*iter).rect.GetPos().x, (*iter).rect.GetPos().y, -1.0-physics::MARGIN_OF_ERROR));
+				}
+				else
+					env->CreateBox((*iter).rect.GetWidth(), (*iter).rect.GetHeight(), 500,
 								Vector3D<double>((*iter).rect.GetPos().x, (*iter).rect.GetPos().y, -1.0-physics::MARGIN_OF_ERROR));
 
 				int width = (int)((*iter).rect.GetWidth()/mTileset.GetTileWidth());

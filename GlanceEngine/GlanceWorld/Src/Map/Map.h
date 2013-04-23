@@ -44,7 +44,14 @@ namespace ge
 		struct TileGroup
 		{
 			short layer1;
+			bool collidable;
 			Rect<double> rect;
+
+			TileGroup()
+			{
+				layer1 = -1;
+				collidable = false;
+			}
 		};
 
 

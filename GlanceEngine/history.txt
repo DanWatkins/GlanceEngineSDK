@@ -2,8 +2,18 @@ Glance Engine - (C) 2010-2013 Daniel L. Watkins
 
 This is a log of everything (most of what happended, the main point) added, changed, or fixed related to the entire engine (Glance Engine, Glance Engine, Glance Engine, or Glance Engine, and GlancePhysics)
 
+
 ---------------------------------------------------------------------------------------------------
- ###### v0.25.2 to v0.30.0 (March 3, 2013 - present)
+ ###### v0.3.0 (April 23, 2013 - present)
+ 
+[NOTE] now the engine only will be developed in large version number increments because it is too tedious to keep changing the number
+
+[ADDED] Collidable tiles such as water are giving a massive height (500px). This is just a temporary solution (v0.3.0) (4/23/2013)
+
+
+---------------------------------------------------------------------------------------------------
+ ###### v0.25.2 to v0.27.2 (March 3, 2013 - April 22, 2013)
+
 [ADDED] Panel gui element (v0.27.0) (4/21/2013)
 [ADDED] Selected menu can be cleared for ContextMenus (v0.27.0) (4/21/2013)
 [ADDED] Globally overloaded + operator for String so now someString+1254 is a valid operation without having to write someString+ToString(1254) (v0.27.0) (4/21/2013)

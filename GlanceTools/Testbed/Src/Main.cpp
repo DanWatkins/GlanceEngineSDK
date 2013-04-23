@@ -235,8 +235,8 @@ void ge::ClientLoop()
 	if (app.GetWasResized())
 		camera.SetViewSize(app.GetWidth(), app.GetHeight());
 
-	//level.Update(app.GetLastUpdateTime());
-	//camera.Draw();
+	level.Update(app.GetLastUpdateTime());
+	camera.Draw();
 
 	root.Update();
 	
@@ -255,7 +255,7 @@ void ge::ClientLoop()
 	root.GetDefaultText().lock()->SetText(String() + ToString(pos.x) + " | " + ToString(pos.y) + " | " + ToString(pos.z));
 	root.Draw();*/
 
-	root.Draw();
+	//root.Draw();
 
 	//increase decrease speed
 	if (app.GetInput()->GetKeyState(GK_LShift, KEY_DOWN))

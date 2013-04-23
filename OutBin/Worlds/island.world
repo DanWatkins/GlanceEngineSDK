@@ -2,7 +2,8 @@
   #make halbadier (1250,800,1) A001
 
   
-  #make wall_top_left (384,708) A002
+  
+  #make wall_top_left (384,708,0) A002
 
   #make wall_horizontal (448,708,0) A003
   #make wall_horizontal (512,708,0) A004
@@ -65,140 +66,7 @@
   #make palm_tree (1570,1062,0) A
   
   #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
- #make palm_tree (280,754,0) A
  
-  
   
   #set player A001
 </entity>
