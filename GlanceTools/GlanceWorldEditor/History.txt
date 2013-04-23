@@ -4,6 +4,7 @@ Glance World Editor - History Log
 ---------------------------------------------------------------------------------------------------
  ### v0.0.1 to v0.5.0 (April 20, 2013 - Present)
 
+[GWE 0.1.0] [ADDED] Entity selction listbox on the right for opened worlds (4/22/23)
 [GWE] [ADDED] (v0.0.1) Open world dialog that opens and views a world. Scrolling is allowed via WASD (4/21/2013)
 [GWE] [ADDED] WorldEditor class and the start of open dialog (v0.0.1) (4/20/2013)
 [GWE] [ADDED] Base of everything (v0.0.1) (4/20/2013)

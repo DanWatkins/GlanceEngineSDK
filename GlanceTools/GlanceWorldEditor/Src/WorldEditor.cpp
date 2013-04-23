@@ -97,8 +97,13 @@ namespace ge
 			mCamera->SetViewSize(mRoot->GetWindow()->GetWidth(), mRoot->GetWindow()->GetHeight()-30);
 			mCamera->SetScreenPos(0,30);
 
-			mTilesetPanel = mRoot->CreatePanel(1253, -1, Vector2D<int>(0,24), 160, mRoot->GetWindow()->GetHeight()-24);
-			mRoot->CreateScrollBarVertical(1254, mTilesetPanel.lock()->GetId(), Vector2D<int>(141,3), mRoot->GetWindow()->GetHeight()-24-6);
+			mEntityListBox = mRoot->CreateListBox(1253, -1, Vector2D<int>(0,24), 160, mRoot->GetWindow()->GetHeight()-24);
+
+			for (int n=0; n<mWorld->GetEntityManager()->TemplateEntityCount(); n++)
+			{
+				WeakPtr<world::Entity> templateEntity = mWorld->GetEntityManager()->GetTemplateEntity(n);
+				mEntityListBox.lock()->AddCell(templateEntity.lock()->GetDisplayName(), templateEntity.lock()->GetName());
+			}
 		}
 
 		void WorldEditor::_UpdateScrolling()

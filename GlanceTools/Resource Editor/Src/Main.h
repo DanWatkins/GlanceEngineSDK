@@ -17,8 +17,8 @@ namespace ge
 	namespace gre
 	{
 		volatile const int VERSION_MAJOR		= 0;
-		volatile const int VERSION_MINOR		= 0;
-		volatile const int VERSION_MICRO		= 4;
+		volatile const int VERSION_MINOR		= 1;
+		volatile const int VERSION_MICRO		= 0;
 
 		inline String GetVersionText()
 		{

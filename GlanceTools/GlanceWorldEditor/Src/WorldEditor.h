@@ -23,7 +23,7 @@ namespace ge
 			//element shortcuts
 			WeakPtr<ContextMenu> mFileMenu;
 			WeakPtr<DialogBox> mOpenDialog;
-			WeakPtr<Panel> mTilesetPanel;
+			WeakPtr<ListBox> mEntityListBox;
 
 			void _CreateUserInterface();
 			void _CreateOpenDialog();

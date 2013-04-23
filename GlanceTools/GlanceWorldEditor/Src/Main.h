@@ -17,7 +17,7 @@ namespace ge
 {
 	namespace gwe
 	{
-		const String gGweVersion = "0.0.1";
+		const String gGweVersion = "0.1.0";
 	};
 };
 
