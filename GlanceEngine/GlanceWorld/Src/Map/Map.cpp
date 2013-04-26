@@ -261,7 +261,7 @@ namespace ge
 								Vector3D<double>((*iter).rect.GetPos().x, (*iter).rect.GetPos().y, -1.0-physics::MARGIN_OF_ERROR));
 				}
 				else
-					env->CreateBox((*iter).rect.GetWidth(), (*iter).rect.GetHeight(), 500,
+					env->CreateBox((*iter).rect.GetWidth(), (*iter).rect.GetHeight(), 1.0+physics::MARGIN_OF_ERROR,
 								Vector3D<double>((*iter).rect.GetPos().x, (*iter).rect.GetPos().y, -1.0-physics::MARGIN_OF_ERROR));
 
 				int width = (int)((*iter).rect.GetWidth()/mTileset.GetTileWidth());

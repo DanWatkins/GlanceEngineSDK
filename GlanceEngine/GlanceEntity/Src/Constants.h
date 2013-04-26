@@ -1,7 +1,7 @@
 /*=================================================================================================
   Glance Engine - (C) 2010-2013 Daniel L. Watkins
 
-  Filename: Entity.h
+  Filename: Constants.h
 =================================================================================================*/
 #include "../../GlancePhysics/Src/Physics.h"
 #include "../../GlanceAsset/Src/Asset.h"

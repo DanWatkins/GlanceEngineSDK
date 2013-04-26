@@ -6,9 +6,9 @@ This is a log of everything (most of what happended, the main point) added, chan
 ---------------------------------------------------------------------------------------------------
  ###### v0.3.0 (April 23, 2013 - present)
  
-[NOTE] now the engine only will be developed in large version number increments because it is too tedious to keep changing the number
 
-[ADDED] Collidable tiles such as water are giving a massive height (500px). This is just a temporary solution (v0.3.0) (4/23/2013)
+[ADDED] Engine version is just a single string now. Also added SDK version string (4/23/2013)
+[ADDED] Collidable tiles such as water are giving a massive height (500px). This is just a temporary solution (4/23/2013)
 
 
 ---------------------------------------------------------------------------------------------------

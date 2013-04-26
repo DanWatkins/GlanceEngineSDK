@@ -1,6 +1,6 @@
 <metrics>
-	#screenWidth 1280
-	#screenHeight 720
-	#fullscreen 1
-	#verticalSync 0
+	#screenWidth 800
+	#screenHeight 600
+	#fullscreen 0
+	#verticalSync 1
 </metrics>
