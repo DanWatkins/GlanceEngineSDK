@@ -82,7 +82,7 @@ namespace ge
 		};
 
 
-		enum ElementEvent
+		enum class ElementEvent
 		{
 			RELEASED,
 			DOWN,

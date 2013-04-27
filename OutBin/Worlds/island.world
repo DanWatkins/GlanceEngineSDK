@@ -1,5 +1,6 @@
 <entity>
-  #make halbadier (1250,800,1) A001
+  #make halbadier (1250,800,0) A001
+  #make two_handed_swordsman (1200,750,0) A001x
 
   
   
@@ -64,11 +65,16 @@
   #make palm_tree (640,1172,0) A
   #make palm_tree (1024,1143,0) A
   #make palm_tree (1570,1062,0) A
+
   
+<<<<<<< HEAD
   #make palm_tree (280,754,0) A
  
   
   #set player A001
+=======
+  #set player A001x
+>>>>>>> [GE 0.3.0] Imported the Two-Handed Swordsman graphics (standing and walking) for testing purposes.
 </entity>
 
 <map>

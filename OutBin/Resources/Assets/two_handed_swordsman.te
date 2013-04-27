@@ -1,0 +1,16 @@
+<header>
+   #name two_handed_swordsman
+   #type ACTOR
+   #displayName Two-Handed_Swordsman
+</header>
+
+<world>
+   #body BOX (0,0,0) 16 16 40
+</world>
+
+<graphics>   
+   <animations>
+      #add standing two_handed_swordsman_standing.as
+	  #add walking two_handed_swordsman_walking.as
+   </animations>
+</graphics>

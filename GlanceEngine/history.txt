@@ -7,6 +7,7 @@ This is a log of everything (most of what happended, the main point) added, chan
  ###### v0.3.0 (April 23, 2013 - present)
  
 
+Fixed ElementListener and State name clashes by using "enum class" requires C++11 (4/27/2013)
 Added base for gui::ElementListener delegate class (4/26/2013)
 [ADDED] Engine version is just a single string now. Also added SDK version string (4/23/2013)
 [ADDED] Collidable tiles such as water are giving a massive height (500px). This is just a temporary solution (4/23/2013)
