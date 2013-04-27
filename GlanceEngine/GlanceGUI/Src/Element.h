@@ -23,6 +23,7 @@ namespace ge
 			Root *mRoot;										//pointer to the Root manager (can't use weak reference because the Root can't instantiate itself as a smart pointer)
 			WeakPtr<Element> mParent;							//weak reference to the parent
 			Window *mWindow;									//pointer to the window where everything is rendered
+			std::vector< WeakPtr<ElementListener> > mElementListeners;
 
 			State mState;										//state the element is in
 			bool mDisabled;										//if true, this element is not usuable, and usually has a different set of images to show it is disabled
@@ -78,6 +79,8 @@ namespace ge
 			void _BringParentsToLocalFront();
 			void _ScheduleToBringToFocus() { _SetScheduledToBringToFocus(true); }
 
+			void _SendElementMessageToListeners(ElementEvent elementEvent, String eventParam="");
+
 		public:
 			friend class Root;
 
@@ -88,6 +91,7 @@ namespace ge
 			void BringToFocus();
 			void RemoveChild(WeakPtr<Element> element) { _RemoveChild(element.lock()->GetId()); }
 			void ScheduleToBeRemoved() { _SetScheduledToBeRemoved(true); }
+			void AddElementListener(WeakPtr<ElementListener> elementListener);
 
 			//accessor and mutator
 			int GetId() { return mId; }

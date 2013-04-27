@@ -129,6 +129,7 @@
     <ClInclude Include="..\..\Src\Elements\Containers\Panel.h">
       <Filter>Containers</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Src\ElementListener.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Extensions">

@@ -15,6 +15,9 @@ namespace ge
 {
 	namespace gui
 	{
+		class ElementListener;
+
+
 		//forward declarations
 		class Element;
 		class Root;
@@ -77,6 +80,16 @@ namespace ge
 			MBC_DOWN_OVER = 3,				//center mouse button is pressed and cursor is over element's outline
 			HAS_FOCUS = 4					//when the Element was just given focus
 		};
+
+
+		enum ElementEvent
+		{
+			RELEASED,
+			DOWN,
+			UP,
+			SELECTED,
+			DESElECTED
+		};
 	};
 };
 
@@ -111,7 +124,7 @@ namespace ge
 
 
 #include "Element.h"
-
+#include "ElementListener.h"
 
 #include "IntegratedElementIds.h"
 #include "Elements/Helpers/Drager.h"

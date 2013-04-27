@@ -15,7 +15,7 @@ namespace ge
 		=============================================================================*/
 		ButtonCaption::ButtonCaption()
 		{
-			_SetState(UP);
+			_SetState(State::UP);
 			mCaption = "";
 		}
 
@@ -50,10 +50,10 @@ namespace ge
 		void ButtonCaption::_Update()
 		{
 			//if the button's state is DOWN, but MBL is up, then the putton should be released
-			if (GetState() == DOWN  &&  GetRoot()->GetWindow()->GetInput()->GetButtonState(GMB_Left) == false)
-				_SetState(RELEASED);
-			else if (GetState() == RELEASED)
-				_SetState(UP);
+			if (GetState() == State::DOWN  &&  GetRoot()->GetWindow()->GetInput()->GetButtonState(GMB_Left) == false)
+				_SetState(State::RELEASED);
+			else if (GetState() == State::RELEASED)
+				_SetState(State::UP);
 		}
 
 
@@ -62,7 +62,7 @@ namespace ge
 		=============================================================================*/
 		void ButtonCaption::_Draw()
 		{
-			if (GetState() == UP)
+			if (GetState() == State::UP)
 				mImgUp.Draw();
 			else
 				mImgDown.Draw();
@@ -76,7 +76,7 @@ namespace ge
 			switch (message)
 			{
 			case MBL_DOWN_OVER:
-				_SetState(DOWN);
+				_SetState(State::DOWN);
 
 			}
 		}

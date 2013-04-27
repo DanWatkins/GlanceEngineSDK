@@ -116,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Src\Console.h" />
+    <ClInclude Include="..\..\Src\ElementListener.h" />
     <ClInclude Include="..\..\Src\Elements\Containers\Panel.h" />
     <ClInclude Include="..\..\Src\Elements\Containers\TabBar.h" />
     <ClInclude Include="..\..\Src\Elements\Containers\TabPage.h" />

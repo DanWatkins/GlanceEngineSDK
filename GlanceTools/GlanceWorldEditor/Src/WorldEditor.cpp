@@ -68,7 +68,7 @@ namespace ge
 			if (mOpenDialog.expired() == false)
 			{
 				WeakPtr<ButtonCaption> openWorld = DynamicPtrCast<ButtonCaption>(mOpenDialog.lock()->GetChild(EID_OPEN_WORLD_BUTTON).lock());
-				if (!openWorld.expired()  &&  openWorld.lock()->GetState() == RELEASED)
+				if (!openWorld.expired()  &&  openWorld.lock()->GetState() == State::RELEASED)
 				{
 					WeakPtr<ListBox> worldListBox = DynamicPtrCast<ListBox>(mOpenDialog.lock()->GetChild(EID_OPEN_WORLD_LISTBOX).lock());
 					String worldPath = worldListBox.lock()->GetSelectedCell().lock()->GetUID();

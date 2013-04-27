@@ -61,7 +61,7 @@ namespace ge
 				mMblJustPressed = false;
 
 			//drop down button was released
-			if (mDropDownButton.lock()->GetState() == RELEASED)
+			if (mDropDownButton.lock()->GetState() == State::RELEASED)
 				ShowListBox(!GetShowingListBox());
 			//there was a click outside the box or a selection was made
 			else if (mMblJustPressed  &&  mMblJustPressed)

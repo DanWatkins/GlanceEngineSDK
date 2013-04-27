@@ -40,7 +40,7 @@ namespace ge
 		void DialogBox::_Update()
 		{
 			//was the close button pressed (released)?
-			if (mCloseButton.lock()->GetState() == RELEASED)
+			if (mCloseButton.lock()->GetState() == State::RELEASED)
 			{
 				WeakPtr<Element> parent = GetParent();
 				if (!parent.expired())
