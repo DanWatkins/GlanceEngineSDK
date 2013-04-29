@@ -30,30 +30,28 @@ namespace ge
 			Sprite mSpriteSheet;									//sprite that actually renders the frames
 			double mFrameTime;										//number of seconds each frame is shown in real time
 
-			WeakPtr< Vector2D<int> > mCurrentOffset;					//pointer to the offset for the current rotation
+			WeakPtr< Vector2D<int> > mCurrentOffset;				//pointer to the offset for the current rotation
 			std::map< int, SharedPtr< Vector2D<int> > > mOffsets;	//contains vectors that represent the offsets for each rotation's images. first vector is for first rotation
 
 			void _AdvanceFrame();
-
 
 		public:
 			Animation(String type);
 			~Animation() {}
 
-			void Draw();
-			void Draw(int x, int y);
-
 			bool LoadAnimationFromFile(String filename, AssetManager *assetManager);
 			void SetWindow(Window *window) { mSpriteSheet.SetWindow(window); }
 			
+			void Draw();
+			void Draw(int x, int y);
+
+			void SetCurrentRotation(int currentRotation);
+			void SetCurrentRotationInDegrees(double rotation);
+			int GetCurrentRotation();
 
 			String GetType() { return mType; }
 			void SetFrameTime(double frameTime) { mFrameTime = frameTime; }
 			double GetFrameTime() { return mFrameTime; }
-
-			void SetCurrentRotationInDegrees(double rotation);
-			void SetCurrentRotation(int currentRotation);
-			int GetCurrentRotation();
 
 			void SetX(int x) { mSpriteSheet.SetX(x); }
 			void SetY(int y) { mSpriteSheet.SetY(y); }

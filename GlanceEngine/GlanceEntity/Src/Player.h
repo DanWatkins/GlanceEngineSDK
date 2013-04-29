@@ -27,7 +27,6 @@ namespace ge
 			bool Init(String handle, EntityManager *manager);
 			WeakPtr<Actor> GetTarget() { return mTarget; }
 			Actor *GetTargetRaw() { return mTarget.lock().get(); }
-
 		};
 	};
 };

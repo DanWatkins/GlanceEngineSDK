@@ -27,36 +27,37 @@ namespace ge
 			static bool _Compare_EntityPosY(SharedPtr<Entity> e1, SharedPtr<Entity> e2);
 			static bool _Compare_EntityPosZ(SharedPtr<Entity> e1, SharedPtr<Entity> e2);
 
+			bool _IdAvailable(int id);
+            void _AddEntity(SharedPtr<Entity> entity);
+			void _AddTemplateEntity(SharedPtr<Entity> entity);
+			void _DeleteEntity(int id);
+			void _Clean();
+			void _SortEntitiesByPosition();
+
         public:
             EntityManager();
             ~EntityManager() {}
+
+			friend class EntityLoader;
 
             //general
             bool Init();
             void Update(double frameTime);
 			void HandleCollisionMessages(std::vector<physics::Collision> collisions);
-            void Clean();
             void ClearEntities();
-			void SortEntitiesByPosition();
-
-            int EntityCount() { return mEntities.size(); }
-			int TemplateEntityCount() { return mTemplateEntities.size(); }
-            WeakPtr<Entity> operator[] (unsigned n);
+			
+			void SetWorld(World *world) { mWorld = world; }
+            World *GetWorld() { return mWorld; }
             
             //entity managment
 			WeakPtr<Entity> CreateEntity(String templateName, Vector3D<double> pos, String handle);
             WeakPtr<Entity> GetEntity(int id);
 			WeakPtr<Entity> GetEntity(String handle);
+			WeakPtr<Entity> operator[] (unsigned n);
 			WeakPtr<Entity> GetTemplateEntity(int containerIndex) { return mTemplateEntities.at(containerIndex); }
             WeakPtr<Entity> GetTemplateEntity(String name);
-			
-			void DeleteEntity(int id);
-            bool IdAvailable(int id);
-            void AddEntity(SharedPtr<Entity> entity);
-			void AddTemplateEntity(SharedPtr<Entity> entity);
-            void SetWorld(World *world) { mWorld = world; }
-            World *GetWorld() { return mWorld; }
-
+			int EntityCount() { return mEntities.size(); }
+			int TemplateEntityCount() { return mTemplateEntities.size(); }
         };
     };
 };

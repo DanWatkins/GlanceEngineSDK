@@ -18,6 +18,5 @@ namespace ge
 
 			return !mTarget.expired();
 		}
-
 	};
 };

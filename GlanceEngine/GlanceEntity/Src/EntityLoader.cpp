@@ -31,7 +31,6 @@ namespace ge
             while (iter != listing.end())
             {
                 LoadTemplateEntityFromFile(*iter);
-
                 iter++;
             }
 
@@ -57,7 +56,7 @@ namespace ge
                 Parse_Entity_HeaderData(file, (SharedPtr<Entity>)actor);
 				Parse_Entity_WorldData(file, (SharedPtr<Entity>)actor);
                 Parse_Entity_GraphicsData(file, actor);
-				mWorld->GetEntityManager()->AddTemplateEntity(actor);
+				mWorld->GetEntityManager()->_AddTemplateEntity(actor);
             }
 			//Object
 			else if (type == OBJECT)
@@ -73,7 +72,7 @@ namespace ge
 					Parse_Entity_WorldData(file, (SharedPtr<Entity>)object);
 					Parse_Object_ObjectData(file, object);
 					Parse_Entity_GraphicsData(file, object);
-					mWorld->GetEntityManager()->AddTemplateEntity(object);
+					mWorld->GetEntityManager()->_AddTemplateEntity(object);
 				}
 				//Ammo
 				else if (objectType == AMMO)
@@ -85,7 +84,7 @@ namespace ge
 					Parse_Object_ObjectData(file, ammo);
 					Parse_Ammo_AmmoData(file, ammo);
 					Parse_Entity_GraphicsData(file, ammo);
-					mWorld->GetEntityManager()->AddTemplateEntity(ammo);
+					mWorld->GetEntityManager()->_AddTemplateEntity(ammo);
 				}
 				//Weapon
 				else if (objectType == WEAPON)
@@ -97,7 +96,7 @@ namespace ge
 					Parse_Object_ObjectData(file, weapon);
 					Parse_Weapon_WeaponData(file, weapon);
 					Parse_Entity_GraphicsData(file, weapon);
-					mWorld->GetEntityManager()->AddTemplateEntity(weapon);
+					mWorld->GetEntityManager()->_AddTemplateEntity(weapon);
 				}
 			}
 

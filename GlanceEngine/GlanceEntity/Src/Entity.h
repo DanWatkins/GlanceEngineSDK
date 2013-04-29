@@ -88,7 +88,7 @@ namespace ge
 			double GetRotation() { return mRotation; }
 			Vector3D<double> GetBodyAnchor() { return mBodyAnchor; }
             
-            EntityManager *GetManager();
+			EntityManager *GetManager();
             World *GetWorld() { return mWorld; }
 			WeakPtr<AnimationManager> GetAnimationManager() { return mAnimationManager; }
         };

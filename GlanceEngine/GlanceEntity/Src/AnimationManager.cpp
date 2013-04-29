@@ -9,6 +9,11 @@ namespace ge
 {
 	namespace world
 	{
+		/*=============================================================================
+		-- Performs a deep copy on every animation contained in the manager. Without
+		   doing a deep copy, copies of this animation manager would be controlling the
+		   same animations, which is not desired.
+		=============================================================================*/
 		AnimationManager& AnimationManager::_Copy(const AnimationManager& animationManager)
 		{
 			//deep copy every Animation
@@ -25,6 +30,10 @@ namespace ge
 			return *this;
 		}
 
+
+		/*=============================================================================
+		-- Constructor for AnimationManager.
+		=============================================================================*/
 		AnimationManager::AnimationManager(const AnimationManager& animationManager)
 		{
 			_Copy(animationManager);
@@ -36,6 +45,10 @@ namespace ge
 		}
 
 
+		/*=============================================================================
+		-- Adds the animation to the manager, but only if there is not another
+		   animation with the same type identifier.
+		=============================================================================*/
 		void AnimationManager::AddAnimation(SharedPtr<Animation> animation)
 		{
 			//make sure there is not already an animation with the same type
@@ -63,6 +76,10 @@ namespace ge
 		}
 
 
+		/*=============================================================================
+		-- Switches the active animation to an animation with type identifier @type if
+		   there is an animation with that type identifier.
+		=============================================================================*/
 		void AnimationManager::SwitchToAnimation(String type)
 		{
 			std::vector< SharedPtr<Animation> >::iterator iter = mAnimations.begin();

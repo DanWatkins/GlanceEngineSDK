@@ -34,7 +34,6 @@ namespace ge
 			std::vector< InventoryGroup > mGroups;			//contains inventroy groups
 			WeakPtr<Object> mActiveObject;					//current object "in the hosts' hand" essentially
 
-
 		public:
 			Inventory() {}
 			~Inventory() {}
@@ -46,9 +45,9 @@ namespace ge
 
 			//active object management
 			bool SetActiveObject(int id);
-			InventoryGroup GetActiveGroup();
 			WeakPtr<Object> GetActiveObject() { return mActiveObject; }
 			void CycleActiveObject();
+			InventoryGroup GetActiveGroup();
 			int GetTotalObjectCount();
 		};
 	};

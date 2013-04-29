@@ -33,10 +33,8 @@ namespace ge
 			WeakPtr<Entity> mHost;				//host containing the object
 			bool mProjectileExclusive;			//if true, the object will be removed after being stationary for a few seconds. And be treated like a bullet or stuff
 
-
 		protected:
 			void _SetObjectType(ObjectType type) { mObjectType = type; }
-
 
 		public:
 			Object();

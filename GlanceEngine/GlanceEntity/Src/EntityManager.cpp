@@ -19,85 +19,10 @@ namespace ge
 		}
 
 
-        /*=============================================================================
-        -- Returns a weak pointer to the entity with the @id contained in the manager.
-        =============================================================================*/
-        WeakPtr<Entity> EntityManager::GetEntity(int id)
-        {
-            std::vector< SharedPtr<Entity> >::iterator iter = mEntities.begin();
-            while (iter != mEntities.end())
-            {
-                if ( (*iter)->GetId() == id )
-					return SharedPtr<Entity>(*iter);
-
-                iter++;
-            }
-
-            return SharedPtr<Entity>();
-        }
-
-
-        /*=============================================================================
-        -- Returns a weak pointer to a template entity with @name.
-        =============================================================================*/
-        WeakPtr<Entity> EntityManager::GetTemplateEntity(String name)
-        {
-            SharedPtr<Entity> entity;
-            std::vector< SharedPtr<Entity> >::iterator iter = mTemplateEntities.begin();
-            while (iter != mTemplateEntities.end())
-            {
-                if ( (*iter)->GetName() == name )
-					return SharedPtr<Entity>(*iter);
-
-                iter++;
-            }
-
-            return WeakPtr<Entity>();
-        }
-
-
 		/*=============================================================================
-        -- Returns a weak pointer to a template entity with @handle.
-        =============================================================================*/
-		WeakPtr<Entity> EntityManager::GetEntity(String handle)
-		{
-			std::vector< SharedPtr<Entity> >::iterator iter = mEntities.begin();
-			while (iter != mEntities.end())
-			{
-				if ( (*iter)->GetHandle() == handle )
-					return SharedPtr<Entity>(*iter);
-
-				iter++;
-			}
-
-			return SharedPtr<Entity>();
-		}
-
-
-		/*=============================================================================
-        -- Removes an entity from the entity list. Note, that if there are any other
-		   SharedPtr<>s sharing the same object as the one deleted, the object will
-		   remain in memory because those SharedPtr<>s still own it.
-        =============================================================================*/
-		void EntityManager::DeleteEntity(int id)
-		{
-			std::vector< SharedPtr<Entity> >::iterator iter = mEntities.begin();
-			while (iter != mEntities.end())
-			{
-				if ( (*iter)->GetId() == id )
-				{
-					mEntities.erase(iter);
-					return;
-				}
-				iter++;
-			}
-		}
-
-
-        /*=============================================================================
         -- Returns true if no other entities have @id.
         =============================================================================*/
-        bool EntityManager::IdAvailable(int id)
+        bool EntityManager::_IdAvailable(int id)
         {
             std::vector< SharedPtr<Entity> >::iterator iter = mEntities.begin();
             while (iter != mEntities.end())
@@ -112,81 +37,48 @@ namespace ge
         }
 
 
-        /*=============================================================================
+		/*=============================================================================
         -- Adds a shared pointer to an entity to @mEntities.
         =============================================================================*/
-        void EntityManager::AddEntity(SharedPtr<Entity> entity)
+        void EntityManager::_AddEntity(SharedPtr<Entity> entity)
         {
             mIdTrack++;
             entity->_SetId(mIdTrack);
             mEntities.push_back(entity);
         }
 
-		void EntityManager::AddTemplateEntity(SharedPtr<Entity> entity)
+
+		void EntityManager::_AddTemplateEntity(SharedPtr<Entity> entity)
 		{
 			entity->_SetId(TEMPLATE_ENTITY_ID);
 			mTemplateEntities.push_back(entity);
 		}
 
 
-        /*=============================================================================
-        -- Initializes the entity system.
-        =============================================================================*/
-        bool EntityManager::Init()
-        {
-            world::EntityLoader loader;
-            return loader.LoadEntityDatabase(mWorld);
-        }
-
-
-        /*=============================================================================
-        -- Updates every entity in the manager and cleans.
-        =============================================================================*/
-        void EntityManager::Update(double frameTime)
-        {
-            Clean();
-
-			//update every entity
-            std::vector< SharedPtr<Entity> >::iterator iter = mEntities.begin();
-            while (iter != mEntities.end())
-            {
-				//adjust the velocity so it is moving at a constant rate based on @frameTime
-				(*iter)->_GetBody().lock()->AdjustVelocityByMultiplier(frameTime);
-
-                (*iter)->Update();
-
-                iter++;
-            }
-
-			//sort every entity so the camera renders everything correctly
-			SortEntitiesByPosition();
-        }
-
-
 		/*=============================================================================
-        -- Goes through every collision found and lets the first body know it collided
-		   with the second body.
+        -- Removes an entity from the entity list. Note, that if there are any other
+		   SharedPtr<>s sharing the same object as the one deleted, the object will
+		   remain in memory because those SharedPtr<>s still own it.
         =============================================================================*/
-		void EntityManager::HandleCollisionMessages(std::vector<physics::Collision> collisions)
+		void EntityManager::_DeleteEntity(int id)
 		{
-			std::vector<physics::Collision>::iterator iter = collisions.begin();
-			while (iter != collisions.end())
+			std::vector< SharedPtr<Entity> >::iterator iter = mEntities.begin();
+			while (iter != mEntities.end())
 			{
-				WeakPtr<Entity> e1 = GetEntity( (*iter).GetB1()->GetHostId() );
-				WeakPtr<Entity> e2 = GetEntity( (*iter).GetB2()->GetHostId() );
-
-				e1.lock()->ReactToCollision( e2 );
-				//TODO shouldn't the second body also know about the collision?
-				
+				if ( (*iter)->GetId() == id )
+				{
+					mEntities.erase(iter);
+					return;
+				}
 				iter++;
 			}
 		}
 
 
-        /*=============================================================================
+		/*=============================================================================
         -- Removes entities if they are not alive.
         =============================================================================*/
-        void EntityManager::Clean()
+        void EntityManager::_Clean()
         {
             std::vector< SharedPtr<Entity> >::iterator iter = mEntities.begin();
             while (iter != mEntities.end())
@@ -195,20 +87,12 @@ namespace ge
                 {
                     //remove the entity from the manager list
                     mEntities.erase(iter);  //TODO is it safe to continue iteration after removing the entity?
+					//TODO maybe use _DeleteEntity(id);
                     iter++;
                 }
 
                 iter++;
             }
-        }
-
-
-        /*=============================================================================
-        -- Removes every entity in the manager.
-        =============================================================================*/
-        void EntityManager::ClearEntities()
-        {
-            mEntities.clear();
         }
 
 
@@ -218,7 +102,7 @@ namespace ge
 		   with lower Z-axis positions are sorted to the end, yet maintaining the same
 		   relative positions determined in the Y-axis sort.
         =============================================================================*/
-		void EntityManager::SortEntitiesByPosition()
+		void EntityManager::_SortEntitiesByPosition()
 		{
 			if (mEntities.size() >= 2)
 			{
@@ -279,6 +163,68 @@ namespace ge
 
 
 		/*=============================================================================
+        -- Initializes the entity system.
+        =============================================================================*/
+        bool EntityManager::Init()
+        {
+            world::EntityLoader loader;
+            return loader.LoadEntityDatabase(mWorld);
+        }
+
+
+		/*=============================================================================
+        -- Updates every entity in the manager and cleans.
+        =============================================================================*/
+        void EntityManager::Update(double frameTime)
+        {
+            _Clean();
+
+			//update every entity
+            std::vector< SharedPtr<Entity> >::iterator iter = mEntities.begin();
+            while (iter != mEntities.end())
+            {
+				//adjust the velocity so it is moving at a constant rate based on @frameTime
+				(*iter)->_GetBody().lock()->AdjustVelocityByMultiplier(frameTime);
+                (*iter)->Update();
+
+                iter++;
+            }
+
+			//sort every entity so the camera renders everything correctly
+			_SortEntitiesByPosition();
+        }
+
+
+		/*=============================================================================
+        -- Goes through every collision found and lets the first body know it collided
+		   with the second body.
+        =============================================================================*/
+		void EntityManager::HandleCollisionMessages(std::vector<physics::Collision> collisions)
+		{
+			std::vector<physics::Collision>::iterator iter = collisions.begin();
+			while (iter != collisions.end())
+			{
+				WeakPtr<Entity> e1 = GetEntity( (*iter).GetB1()->GetHostId() );
+				WeakPtr<Entity> e2 = GetEntity( (*iter).GetB2()->GetHostId() );
+
+				e1.lock()->ReactToCollision( e2 );
+				//TODO shouldn't the second body also know about the collision?
+				
+				iter++;
+			}
+		}
+
+
+		/*=============================================================================
+        -- Removes every entity in the manager.
+        =============================================================================*/
+        void EntityManager::ClearEntities()
+        {
+            mEntities.clear();
+        }
+
+
+		/*=============================================================================
         -- Creates a new entity given the template entity's name and the world position.
         =============================================================================*/
         WeakPtr<Entity> EntityManager::CreateEntity(String templateName, Vector3D<double> pos, String handle)
@@ -293,7 +239,7 @@ namespace ge
 				*actor.get() = *DynamicPtrCast<Actor>(entity.lock()).get();
 				actor->_SetHandle(handle);
 
-				AddEntity( actor );
+				_AddEntity( actor );
 
 				//make a new body in the physics environment and link this entity with it
 				actor->_SetBody(mWorld->GetPhysicsEnvironment()->CreateBody( actor->_GetBody(), pos, actor->GetId()));
@@ -307,7 +253,7 @@ namespace ge
 				*object.get() = *DynamicPtrCast<Object>(entity.lock()).get();
 				object->_SetHandle(handle);
 
-				AddEntity( object );
+				_AddEntity( object );
 
 				//make a new body in the physics enbironment and link this entity with it
 				object->_SetBody(mWorld->GetPhysicsEnvironment()->CreateBody( object->_GetBody(), pos, object->GetId()));
@@ -319,12 +265,67 @@ namespace ge
         }
 
 
+        /*=============================================================================
+        -- Returns a weak pointer to the entity with the @id contained in the manager.
+        =============================================================================*/
+        WeakPtr<Entity> EntityManager::GetEntity(int id)
+        {
+            std::vector< SharedPtr<Entity> >::iterator iter = mEntities.begin();
+            while (iter != mEntities.end())
+            {
+                if ( (*iter)->GetId() == id )
+					return SharedPtr<Entity>(*iter);
+
+                iter++;
+            }
+
+            return SharedPtr<Entity>();
+        }
+
+
+		/*=============================================================================
+        -- Returns a weak pointer to a template entity with @handle.
+        =============================================================================*/
+		WeakPtr<Entity> EntityManager::GetEntity(String handle)
+		{
+			std::vector< SharedPtr<Entity> >::iterator iter = mEntities.begin();
+			while (iter != mEntities.end())
+			{
+				if ( (*iter)->GetHandle() == handle )
+					return SharedPtr<Entity>(*iter);
+
+				iter++;
+			}
+
+			return SharedPtr<Entity>();
+		}
+
+
 		/*=============================================================================
         -- Overloaded operator to access the nth entity in the entity list.
         =============================================================================*/
         WeakPtr<Entity> EntityManager::operator[] (unsigned n)
         {
 			return mEntities[n];
+        }
+
+
+        /*=============================================================================
+        -- Returns a weak pointer to a template entity with @name.
+        =============================================================================*/
+        WeakPtr<Entity> EntityManager::GetTemplateEntity(String name)
+        {
+            SharedPtr<Entity> entity;
+            std::vector< SharedPtr<Entity> >::iterator iter = mTemplateEntities.begin();
+            while (iter != mTemplateEntities.end())
+            {
+                if ( (*iter)->GetName() == name )
+					return SharedPtr<Entity>(*iter);
+
+                iter++;
+            }
+
+            return WeakPtr<Entity>();
         }
     };
 };

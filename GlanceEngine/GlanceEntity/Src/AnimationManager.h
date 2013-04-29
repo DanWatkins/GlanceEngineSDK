@@ -22,13 +22,11 @@ namespace ge
 			std::vector< SharedPtr<Animation> > mAnimations;
 			WeakPtr<Animation> mActiveAnimation;
 
-		protected:
 			AnimationManager& _Copy(const AnimationManager& animationManager);
 
 		public:
 			AnimationManager() {}
 			AnimationManager(const AnimationManager& animationManager);
-			~AnimationManager() {}
 			AnimationManager& operator= (const AnimationManager& animationManager);
 
 			void AddAnimation(SharedPtr<Animation> animation);					

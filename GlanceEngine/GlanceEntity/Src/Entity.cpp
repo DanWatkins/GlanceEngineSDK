@@ -25,6 +25,18 @@ namespace ge
 			mAnimationManager	= SharedPtr<AnimationManager>(new AnimationManager);
         }
 
+		//copy constructor
+		Entity::Entity(const Entity& entity)
+		{
+			_Copy(entity);
+		}
+
+		//assignment operator
+		Entity& Entity::operator= (const Entity& entity)
+		{
+			return _Copy(entity);
+		}
+
 		//reusable copy method
 		Entity& Entity::_Copy(const Entity& entity)
 		{
@@ -42,95 +54,6 @@ namespace ge
 			mBody						= entity.mBody;
 
 			return *this;
-		}
-
-		//copy constructor
-		Entity::Entity(const Entity& entity)
-		{
-			_Copy(entity);
-		}
-
-		//assignment operator
-		Entity& Entity::operator= (const Entity& entity)
-		{
-			return _Copy(entity);
-		}
-
-
-		/*=============================================================================
-        -- Adds the velocity vector to the body. the physics Environment will determine
-		   if the entity can actually move (consideres the net velocity, which is
-		   basically the combination of all Move() calls).
-        =============================================================================*/
-		void Entity::Move(double x, double y, double z)
-		{
-			mBody.lock()->AddVelocity(x, y, z);
-		}
-
-
-		/*=============================================================================
-        -- Returns the entity manager hosting the entity.
-        =============================================================================*/
-        EntityManager *Entity::GetManager()
-        {
-            return mWorld->GetEntityManager();
-        }
-
-
-		/*=============================================================================
-		-- Setter and getter for the position.
-		=============================================================================*/
-		void Entity::SetPos(Vector3D<double> pos)
-		{
-			if (!mBody.expired())
-				mBody.lock()->RequestPos(pos.x, pos.y, pos.z);
-		}
-
-
-		/*=============================================================================
-		-- Returns the position of the entity's body.
-		=============================================================================*/
-		Vector3D<double> Entity::GetPos()
-		{
-			if (!mBody .expired())
-				return mBody.lock()->GetPos();
-
-			return Vector3D<double>();
-		}
-
-
-
-		/*=============================================================================
-		-- Updates Entity specific stuff. Should be called by all virtual overides from
-		   derived classes.
-		=============================================================================*/
-		void Entity::Update()
-		{
-			_CalculateRotation();
-			_UpdateAnimation();
-		};
-
-
-		/*=============================================================================
-		-- Draws generic entity stuff like shadows. Should be called by all virtual
-		   overides from derived classes.
-		=============================================================================*/
-		void Entity::Draw(int sx, int sy, Window *window)
-		{
-			//does the shadow represent a rectangular prism?
-			if (_GetBody().lock()->GetType() == physics::BOX)
-			{
-				double width = DynamicPtrCast<physics::Box>(_GetBody().lock())->GetWidth();
-				double height = DynamicPtrCast<physics::Box>(_GetBody().lock())->GetLength(); //this is height on a 2D coordinate system
-
-				float x = sx;
-				float y = sy+(height/2)+_GetBody().lock()->GetPos().z;
-				float x2 = x+width;
-				float y2 = y+height + (_GetBody().lock()->GetHeight() * 0.45); //take into consideration how tall the entity is (taller means longer shadow)
-
-				sf::Shape b1 = sf::Shape::Rectangle(x, y, x2, y2, sf::Color(0,0,0,75), 0.0f, sf::Color(0,0,0,0));
-				window->GetWindow()->Draw(b1);
-			}
 		}
 
 
@@ -175,6 +98,83 @@ namespace ge
 				mAnimationManager->SwitchToAnimation(stance::Standing);
 			else
 				mAnimationManager->SwitchToAnimation(stance::Walking);
+		}
+
+
+		/*=============================================================================
+		-- Updates Entity specific stuff. Should be called by all virtual overides from
+		   derived classes.
+		=============================================================================*/
+		void Entity::Update()
+		{
+			_CalculateRotation();
+			_UpdateAnimation();
+		};
+
+
+		/*=============================================================================
+		-- Draws generic entity stuff like shadows. Should be called by all virtual
+		   overides from derived classes.
+		=============================================================================*/
+		void Entity::Draw(int sx, int sy, Window *window)
+		{
+			//does the shadow represent a rectangular prism?
+			if (_GetBody().lock()->GetType() == physics::BOX)
+			{
+				double width = DynamicPtrCast<physics::Box>(_GetBody().lock())->GetWidth();
+				double height = DynamicPtrCast<physics::Box>(_GetBody().lock())->GetLength(); //this is height on a 2D coordinate system
+
+				float x = sx;
+				float y = sy+(height/2)+_GetBody().lock()->GetPos().z;
+				float x2 = x+width;
+				float y2 = y+height + (_GetBody().lock()->GetHeight() * 0.45); //take into consideration how tall the entity is (taller means longer shadow)
+
+				sf::Shape b1 = sf::Shape::Rectangle(x, y, x2, y2, sf::Color(0,0,0,75), 0.0f, sf::Color(0,0,0,0));
+				window->GetWindow()->Draw(b1);
+			}
+		}
+
+
+		/*=============================================================================
+        -- Adds the velocity vector to the body. the physics Environment will determine
+		   if the entity can actually move (consideres the net velocity, which is
+		   basically the combination of all Move() calls).
+        =============================================================================*/
+		void Entity::Move(double x, double y, double z)
+		{
+			mBody.lock()->AddVelocity(x, y, z);
+		}
+
+
+		/*=============================================================================
+		-- Setter and getter for the position.
+		=============================================================================*/
+		void Entity::SetPos(Vector3D<double> pos)
+		{
+			if (!mBody.expired())
+				mBody.lock()->RequestPos(pos.x, pos.y, pos.z);
+		}
+
+
+		/*=============================================================================
+		-- Returns the position of the entity's body.
+		=============================================================================*/
+		Vector3D<double> Entity::GetPos()
+		{
+			if (!mBody .expired())
+				return mBody.lock()->GetPos();
+
+			return Vector3D<double>();
+		}
+
+
+		/*=============================================================================
+		-- Returns a pointer to the EntityManager. Note this cannot be defined in the
+		   class definition because it requires the type EntityManger to be defined.
+		=============================================================================*/
+		EntityManager *Entity::GetManager()
+		{
+			return mWorld->GetEntityManager();
 		}
 	};
 };

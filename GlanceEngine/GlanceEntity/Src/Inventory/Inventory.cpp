@@ -195,12 +195,11 @@ namespace ge
 		int Inventory::GetTotalObjectCount()
 		{
 			int count = 0;
-
 			std::vector<InventoryGroup>::iterator iter = mGroups.begin();
+
 			while (iter != mGroups.end())
 			{
 				count += (*iter).GetObjectCount();
-
 				iter++;
 			}
 
