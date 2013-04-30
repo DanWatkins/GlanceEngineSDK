@@ -73,7 +73,7 @@ namespace ge
 					if (!mSelectedCell.expired())
 						mSelectedCell.lock()->SetBackgroundImage("cell.png");
 
-					mSelectedCell = GetCellAtPoint(GetWindow()->GetInput()->GetMousePos());
+					SelectCell(GetCellAtPoint(GetWindow()->GetInput()->GetMousePos()));
 
 					if (!mSelectedCell.expired())
 						mSelectedCell.lock()->SetBackgroundImage("cell_selected.png");
@@ -93,6 +93,7 @@ namespace ge
 				if ((*iter).lock() == cell.lock())
 				{
 					mSelectedCell = cell;
+					_SendElementMessageToListeners(ElementEvent::SELECTED, mSelectedCell.lock()->GetUID());
 					return;
 				}
 

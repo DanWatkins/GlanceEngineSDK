@@ -27,6 +27,7 @@ namespace ge
 			WeakPtr<ListBox> mListBox;
 			WeakPtr<ButtonImage> mDropDownButton;
 			unsigned mMaxVerticalSpan;					//max height before scroll bars will be used (listbox and combobox combined)
+			WeakPtr<Cell> mLastSelection;
 
 			bool mMblJustPressed;
 			bool mMblDownLastUpdate;

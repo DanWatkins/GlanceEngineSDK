@@ -80,12 +80,17 @@ namespace ge
 					//selection to get nulled (undesired result)
 					WeakPtr<Cell> oldSelectedCell = mListBox.lock()->GetSelectedCell();
 					mListBox.lock()->_SendMessage(MBL_DOWN_OVER);
+
+					if (mListBox.lock()->GetSelectedCell().lock().get() != mLastSelection.lock().get())
+						_SendElementMessageToListeners(ElementEvent::SELECTED, mListBox.lock()->GetSelectedCell().lock()->GetUID());
+
 					if (mListBox.lock()->GetSelectedCell().expired())
 						mListBox.lock()->SelectCell(oldSelectedCell);
 				}
 			}
 
 			mMblDownLastUpdate = mblDown;
+			mLastSelection = mListBox.lock()->GetSelectedCell();
 		}
 
 
