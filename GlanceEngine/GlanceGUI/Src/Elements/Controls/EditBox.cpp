@@ -64,7 +64,7 @@ namespace ge
 				newText.PushBack(GetWindow()->GetInput()->GetTextEntered());
 
 				if (GetCaption() != newText)
-					_SendElementMessageToListeners(ElementEvent::VALUE_CHANGED);
+					_SendElementMessageToListeners(ElementEvent::VALUE_CHANGED, newText);
 
 				//don't set the text directly or else it won't be restricted properly
 				SetCaption(newText);

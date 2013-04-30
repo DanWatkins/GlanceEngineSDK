@@ -41,8 +41,6 @@ namespace ge
 		=============================================================================*/
 		void Slider::_UpdateAssets()
 		{
-			double oldPosition = GetPercentOffset();
-
 			if (!mKnobDrager.expired())
 			{
 				mKnobDrager.lock()->SetParentRelPosLowerBound(Vector2D<int>(-KNOB_WIDTH/2, 0));
@@ -52,8 +50,13 @@ namespace ge
 			mImgTrack.SetSize(GetWidth(), TRACK_HEIGHT);
 			mImgTrack.SetPos(GetScreenPos());
 
-			if (GetPercentOffset() != oldPosition)
-				_SendElementMessageToListeners(ElementEvent::VALUE_CHANGED);
+			if (!mKnobDrager.expired())
+			{
+				if (GetPercentOffset() != mOldPercentOffset)
+					_SendElementMessageToListeners(ElementEvent::VALUE_CHANGED, ToString(GetPercentOffset()));
+
+				mOldPercentOffset = GetPercentOffset();
+			}
 		}
 	};
 };

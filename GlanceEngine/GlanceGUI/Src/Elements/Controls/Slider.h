@@ -26,6 +26,7 @@ namespace ge
 			Sprite mImgTrack;
 			WeakPtr<ButtonCaption> mKnobButton;
 			WeakPtr<Drager> mKnobDrager;
+			double mOldPercentOffset;
 
 		protected:
 			bool _PostInit();
@@ -35,6 +36,8 @@ namespace ge
 
 		public:
 			friend class Root;
+
+			Slider() { mOldPercentOffset = 0.0; }
 
 			double GetPercentOffset() { return (double)(mKnobButton.lock()->GetRelPos().x+(KNOB_WIDTH/2)) / (double)GetWidth(); }
 		};

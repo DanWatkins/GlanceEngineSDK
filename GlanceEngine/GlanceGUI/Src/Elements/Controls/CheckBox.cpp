@@ -62,11 +62,7 @@ namespace ge
 			if (mPressed && !GetRoot()->GetWindow()->GetInput()->GetButtonState(GMB_Left))
 			{
 				//toggle the checked/unchecked state
-				if (GetState() == CHECKED)
-					_SetState(UNCHECKED);
-				else
-					_SetState(CHECKED);
-
+				SetChecked(GetState() != CHECKED);
 				mPressed = false;
 			}
 		}

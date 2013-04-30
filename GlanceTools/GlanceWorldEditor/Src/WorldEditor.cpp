@@ -30,7 +30,7 @@ namespace ge
 		void WorldEditor::_CreateOpenDialog()
 		{
 			int width = 300;
-			int height = 200;
+			int height = 400;
 			Vector2D<int> centeredPosition(mRoot->GetWindow()->GetWidth()/2-width/2, mRoot->GetWindow()->GetHeight()/2-height/2);
 			mOpenDialog = mRoot->CreateDialogBox(EID_OPEN_DIALOG, -1, centeredPosition, width, height, "Open World");
 				WeakPtr<ListBox> worldListBox = mRoot->CreateListBox(EID_OPEN_WORLD_LISTBOX, mOpenDialog, Vector2D<int>(10,40), 200, 150);
@@ -47,6 +47,15 @@ namespace ge
 
 				iter++;
 			}
+
+			WeakPtr<ButtonCaption> bc = mRoot->CreateButtonCaption(12345600, mOpenDialog, Vector2D<int>(10,220), 120, 24, "FUCK YOU");
+			bc.lock()->AddElementListener(this);
+			WeakPtr<CheckBox> cb = mRoot->CreateCheckBox(12345601, mOpenDialog, Vector2D<int>(10,250), "Fuck YOU");
+			cb.lock()->AddElementListener(this);
+			WeakPtr<EditBox> eb = mRoot->CreateEditBox(12345610, mOpenDialog, Vector2D<int>(140,220), 120, 24, "");
+			eb.lock()->AddElementListener(this);
+			WeakPtr<Slider> sl = mRoot->CreateSlider(12345611, mOpenDialog, Vector2D<int>(140,250), 120);
+			sl.lock()->AddElementListener(this);
 		}
 
 
