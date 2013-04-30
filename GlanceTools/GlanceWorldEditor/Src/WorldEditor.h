@@ -13,7 +13,7 @@ namespace ge
 {
 	namespace gwe
 	{
-		class WorldEditor
+		class WorldEditor : public gui::ElementListener
 		{
 		private:
 			gui::Root *mRoot;
@@ -33,6 +33,8 @@ namespace ge
 
 			void Init();
 			void Update();
+
+			void SendElementMessage(ElementEvent elementEvent, WeakPtr<Element> element, String eventParam);
 
 			void LoadWorld(String worldPath);
 			void _UpdateScrolling();

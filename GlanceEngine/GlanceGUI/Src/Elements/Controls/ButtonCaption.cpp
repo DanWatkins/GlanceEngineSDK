@@ -51,9 +51,15 @@ namespace ge
 		{
 			//if the button's state is DOWN, but MBL is up, then the putton should be released
 			if (GetState() == State::DOWN  &&  GetRoot()->GetWindow()->GetInput()->GetButtonState(GMB_Left) == false)
+			{
 				_SetState(State::RELEASED);
+				_SendElementMessageToListeners(ElementEvent::RELEASED);
+			}
 			else if (GetState() == State::RELEASED)
+			{
 				_SetState(State::UP);
+				_SendElementMessageToListeners(ElementEvent::UP);
+			}
 		}
 
 

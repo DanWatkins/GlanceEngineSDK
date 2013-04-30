@@ -47,6 +47,8 @@ namespace ge
 		=============================================================================*/
 		void ScrollBar::_Update()
 		{
+			double oldScrollPosition = GetScrollPosition();
+
 			//update the scroll position
 			int knobLength = (mSpanDirection == SpanDirection::HORIZONTAL) ? mKnobButton.lock()->GetWidth() : mKnobButton.lock()->GetHeight();
 			int knobMin = SCROLL_BAR_BUTTON_SIZE;
@@ -68,6 +70,9 @@ namespace ge
 
 				mAdjustTimer.Start();
 			}
+
+			if (GetScrollPosition() != oldScrollPosition)
+				_SendElementMessageToListeners(ElementEvent::VALUE_CHANGED);
 		}
 
 		

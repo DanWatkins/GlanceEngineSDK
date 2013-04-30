@@ -63,6 +63,9 @@ namespace ge
 				String newText = mText.lock()->GetText();
 				newText.PushBack(GetWindow()->GetInput()->GetTextEntered());
 
+				if (GetCaption() != newText)
+					_SendElementMessageToListeners(ElementEvent::VALUE_CHANGED);
+
 				//don't set the text directly or else it won't be restricted properly
 				SetCaption(newText);
 			}

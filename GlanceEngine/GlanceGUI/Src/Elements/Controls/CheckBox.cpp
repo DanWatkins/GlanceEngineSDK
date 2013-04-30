@@ -23,9 +23,15 @@ namespace ge
 		void CheckBox::SetChecked(bool checked)
 		{
 			if (checked)
+			{
 				_SetState(CHECKED);
+				_SendElementMessageToListeners(ElementEvent::CHECKED);
+			}
 			else
+			{
 				_SetState(UNCHECKED);
+				_SendElementMessageToListeners(ElementEvent::UNCHECKED);
+			}
 		}
 
 		/*=============================================================================

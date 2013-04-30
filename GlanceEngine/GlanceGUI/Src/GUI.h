@@ -84,11 +84,15 @@ namespace ge
 
 		enum class ElementEvent
 		{
-			RELEASED,
-			DOWN,
-			UP,
+			UNDEFINED = State::UNDEFINED,
+			RELEASED = State::RELEASED,
+			DOWN = State::DOWN,
+			UP = State::UP,
+			CHECKED = State::CHECKED,
+			UNCHECKED = State::UNCHECKED,
 			SELECTED,
-			DESElECTED
+			DESElECTED,
+			VALUE_CHANGED
 		};
 	};
 };

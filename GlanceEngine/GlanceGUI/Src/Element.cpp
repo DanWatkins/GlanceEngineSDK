@@ -246,11 +246,11 @@ namespace ge
 		void Element::_SendElementMessageToListeners(ElementEvent elementEvent, String eventParam)
 		{
 			WeakPtr<Element> self = _GetAsWeakPtr();
-			std::vector< WeakPtr<ElementListener> >::iterator iter = mElementListeners.begin();
+			std::vector<ElementListener*>::iterator iter = mElementListeners.begin();
 
 			while (iter != mElementListeners.end())
 			{
-				(*iter).lock()->SendElementMessage(elementEvent, self, eventParam);
+				(*iter)->SendElementMessage(elementEvent, self, eventParam);
 				iter++;
 			}
 		}
@@ -324,7 +324,7 @@ namespace ge
 		}
 
 
-		void Element::AddElementListener(WeakPtr<ElementListener> elementListener)
+		void Element::AddElementListener(ElementListener *elementListener)
 		{
 			//TODO shall we check if @elementListener is already in?
 			mElementListeners.push_back(elementListener);

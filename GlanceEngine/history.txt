@@ -6,6 +6,7 @@ This is a log of everything (most of what happended, the main point) added, chan
 ---------------------------------------------------------------------------------------------------
  ###### v0.3.0 (April 23, 2013 - present)
  
+Added sendMessageToListener calls in the buttons, checkbox, edit box, slider, and scroll bar (4/29/2013)
 Ordered every header and source pair in GlanceEntity so the header file's method ordering is the same in the corresponding source (4/28/2013)
 Fixed ElementListener and State name clashes by using "enum class" requires C++11 (4/27/2013)
 Added base for gui::ElementListener delegate class (4/26/2013)

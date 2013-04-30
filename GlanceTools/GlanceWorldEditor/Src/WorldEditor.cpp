@@ -35,6 +35,7 @@ namespace ge
 			mOpenDialog = mRoot->CreateDialogBox(EID_OPEN_DIALOG, -1, centeredPosition, width, height, "Open World");
 				WeakPtr<ListBox> worldListBox = mRoot->CreateListBox(EID_OPEN_WORLD_LISTBOX, mOpenDialog, Vector2D<int>(10,40), 200, 150);
 				mRoot->CreateButtonCaption(EID_OPEN_WORLD_BUTTON, mOpenDialog, Vector2D<int>(220,40), 70, 24, "Open");
+				mOpenDialog.lock()->AddElementListener(this);
 
 			io::DirectoryListing worldListing = io::GetFilesInDirectory(DIR_WORLDS, ".world");
 			io::DirectoryListing::iterator iter = worldListing.begin();
@@ -65,7 +66,7 @@ namespace ge
 			if (mFileMenu.lock()->GetSelectedCaption() == "Open"  &&  mOpenDialog.expired())
 				_CreateOpenDialog();
 
-			if (mOpenDialog.expired() == false)
+			/*if (mOpenDialog.expired() == false)
 			{
 				WeakPtr<ButtonCaption> openWorld = DynamicPtrCast<ButtonCaption>(mOpenDialog.lock()->GetChild(EID_OPEN_WORLD_BUTTON).lock());
 				if (!openWorld.expired()  &&  openWorld.lock()->GetState() == State::RELEASED)
@@ -75,13 +76,18 @@ namespace ge
 					LoadWorld(worldPath);
 					mOpenDialog.lock()->ScheduleToBeRemoved();
 				}
-			}
+			}*/
 				
 
 			mFileMenu.lock()->ClearSelectedCaption();
 
 			if (mCamera)
 				mCamera->Draw();
+		}
+
+		void WorldEditor::SendElementMessage(ElementEvent elementEvent, WeakPtr<Element> element, String eventParam)
+		{
+			std::cout << "ElemenetEvent [" << (int)elementEvent << "] for element instance at 0x" << element.lock().get() << " with event parameter " << eventParam.GetStd() << std::endl;
 		}
 
 
@@ -144,6 +150,5 @@ namespace ge
 			else if (!up && down && left && !right)
 				mCamera->Move(-DIAG, DIAG, 0.0);
 		}
-
 	};
 };
