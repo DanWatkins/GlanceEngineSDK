@@ -10,6 +10,9 @@ namespace ge
 {
 	namespace gwe
 	{
+		/*=============================================================================
+		-- Generates the default user interface at start up.
+		=============================================================================*/
 		void WorldEditor::_CreateUserInterface()
 		{
 			using namespace gui;
@@ -27,6 +30,9 @@ namespace ge
 		}
 
 
+		/*=============================================================================
+		-- Creates the open world dialog.
+		=============================================================================*/
 		void WorldEditor::_CreateOpenDialog()
 		{
 			int width = 300;
@@ -34,8 +40,8 @@ namespace ge
 			Vector2D<int> centeredPosition(mRoot->GetWindow()->GetWidth()/2-width/2, mRoot->GetWindow()->GetHeight()/2-height/2);
 			mOpenDialog = mRoot->CreateDialogBox(EID_OPEN_DIALOG, -1, centeredPosition, width, height, "Open World");
 				WeakPtr<ListBox> worldListBox = mRoot->CreateListBox(EID_OPEN_WORLD_LISTBOX, mOpenDialog, Vector2D<int>(10,40), 200, 150);
-				mRoot->CreateButtonCaption(EID_OPEN_WORLD_BUTTON, mOpenDialog, Vector2D<int>(220,40), 70, 24, "Open");
-				mOpenDialog.lock()->AddElementListener(this);
+				WeakPtr<ButtonCaption> openButton = mRoot->CreateButtonCaption(EID_OPEN_WORLD_BUTTON, mOpenDialog, Vector2D<int>(220,40), 70, 24, "Open");
+				openButton.lock()->AddElementListener(this);
 
 			io::DirectoryListing worldListing = io::GetFilesInDirectory(DIR_WORLDS, ".world");
 			io::DirectoryListing::iterator iter = worldListing.begin();
@@ -47,43 +53,21 @@ namespace ge
 
 				iter++;
 			}
-
-
-			//Element testing
-			WeakPtr<ButtonCaption> bc = mRoot->CreateButtonCaption(12345600, mOpenDialog, Vector2D<int>(10,220), 120, 24, "FUCK YOU");
-			bc.lock()->AddElementListener(this);
-
-			WeakPtr<CheckBox> cb = mRoot->CreateCheckBox(12345601, mOpenDialog, Vector2D<int>(10,250), "Fuck YOU");
-			cb.lock()->AddElementListener(this);
-
-			WeakPtr<EditBox> eb = mRoot->CreateEditBox(12345610, mOpenDialog, Vector2D<int>(140,220), 120, 24, "");
-			eb.lock()->AddElementListener(this);
-
-			WeakPtr<Slider> sl = mRoot->CreateSlider(12345611, mOpenDialog, Vector2D<int>(140,250), 120);
-			sl.lock()->AddElementListener(this);
-
-			WeakPtr<ComboBox> combo = mRoot->CreateComboBox(13245612, mOpenDialog, Vector2D<int>(10,390), 150);
-			combo.lock()->AddCell("Low", "Low");
-			combo.lock()->AddCell("Medium", "Medium");
-			combo.lock()->AddCell("High", "High");
-			combo.lock()->AddCell("Ultra", "Ultra");
-			combo.lock()->AddElementListener(this);
-
-			WeakPtr<ListBox> lbox = mRoot->CreateListBox(12345613, mOpenDialog, Vector2D<int>(170,390), 150, 200);
-			lbox.lock()->AddCell("Low", "Low");
-			lbox.lock()->AddCell("Medium", "Medium");
-			lbox.lock()->AddCell("High", "High");
-			lbox.lock()->AddCell("Ultra", "Ultra");
-			lbox.lock()->AddElementListener(this);
 		}
 
 
+		/*=============================================================================
+		-- Init
+		=============================================================================*/
 		void WorldEditor::Init()
 		{
 			_CreateUserInterface();
 		}
 
 
+		/*=============================================================================
+		-- Update
+		=============================================================================*/
 		void WorldEditor::Update()
 		{
 			if (mWorld)
@@ -113,12 +97,34 @@ namespace ge
 				mCamera->Draw();
 		}
 
+
+		/*=============================================================================
+		-- Callback method for responding to gui::Element messages.
+		=============================================================================*/
 		void WorldEditor::SendElementMessage(ElementEvent elementEvent, WeakPtr<Element> element, String eventParam)
 		{
 			std::cout << "ElemenetEvent [" << (int)elementEvent << "] for element instance at 0x" << element.lock().get() << " with event parameter " << eventParam.GetStd() << std::endl;
+			int elementId = element.lock()->GetId();
+
+			switch (elementId)
+			{
+				case EID_OPEN_WORLD_BUTTON:
+				{
+					if (elementEvent == ElementEvent::RELEASED)
+					{
+						WeakPtr<ListBox> worldListBox = DynamicPtrCast<ListBox>(mOpenDialog.lock()->GetChild(EID_OPEN_WORLD_LISTBOX).lock());
+						String worldPath = worldListBox.lock()->GetSelectedCell().lock()->GetUID();
+						LoadWorld(worldPath);
+						mOpenDialog.lock()->ScheduleToBeRemoved();
+					}
+				}
+			}
 		}
 
 
+		/*=============================================================================
+		-- Loads the specified world and sets the camera to view it.
+		=============================================================================*/
 		void WorldEditor::LoadWorld(String worldPath)
 		{
 			mWorld = SharedPtr<world::World>(new world::World);
@@ -140,8 +146,15 @@ namespace ge
 			}
 		}
 
+
+		/*=============================================================================
+		-- Updates scrolling based on WASD
+		=============================================================================*/
 		void WorldEditor::_UpdateScrolling()
 		{
+			//TODO implement scrolling by holding right-click and moving
+			//TODO implement scrolling by moving the cursor to the edge of the window
+
 			if (!mCamera)
 				return;
 
