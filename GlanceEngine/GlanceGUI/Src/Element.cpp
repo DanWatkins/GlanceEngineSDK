@@ -276,6 +276,7 @@ namespace ge
 			{
 				if ( (*iter)->GetId() == id )
 				{
+					(*iter)->_SendElementMessageToListeners(ElementEvent::REMOVED);
 					mChildren.erase(iter);
 					return;
 				}

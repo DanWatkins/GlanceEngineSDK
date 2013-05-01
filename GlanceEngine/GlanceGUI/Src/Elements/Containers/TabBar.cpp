@@ -147,6 +147,7 @@ namespace ge
 						//is the mouse intersecting a header's rectangle?
 						if (header.Intersect(mousePos))
 						{
+							WeakPtr<TabPage> oldActivePage = mActivePage;
 							mActivePage = *iter;
 
 							//set every other page to not draw
@@ -154,10 +155,13 @@ namespace ge
 							while (iter != mPages.end())
 							{
 								(*iter).lock()->SetDraws(false);
+								if ((*iter).lock().get() == oldActivePage.lock().get())
+									_SendElementMessageToListeners(ElementEvent::PAGE_DISAPEARED, ToString((*iter).lock()->GetId()));
 								iter++;
 							}
 
 							mActivePage.lock()->SetDraws(true);
+							_SendElementMessageToListeners(ElementEvent::PAGE_APPEARED, ToString(mActivePage.lock()->GetId()));
 
 							break;
 						}

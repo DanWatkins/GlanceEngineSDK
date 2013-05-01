@@ -28,6 +28,7 @@ namespace ge
 
 
 			WeakPtr<TabBar> tabBar = GetRoot()->CreateTabBar(EID_RESOURCE_TAB_BAR, EID_ROOT, Vector2D<int>(0,40), window->GetWidth(), window->GetHeight()-40);
+				tabBar.lock()->AddElementListener(this);
 				WeakPtr<TabPage> entityPage = tabBar.lock()->AddPage("Entities");
 					mEntityEditor = SharedPtr<EntityEditor>(new EntityEditor(GetRoot(), this, entityPage));
 					mEntityEditor->CreateUserInterface();
@@ -61,6 +62,21 @@ namespace ge
 		void ResourceEditor::Update()
 		{
 			mEntityEditor->Update();
+		}
+
+
+		/*=============================================================================
+		-- Callback method for responding to gui::Element messages.
+		=============================================================================*/
+		void ResourceEditor::SendElementMessage(ElementEvent elementEvent, WeakPtr<Element> element, String eventParam)
+		{
+			std::cout << "ElemenetEvent [" << (int)elementEvent << "] for element instance at 0x" << element.lock().get() << " with event parameter " << eventParam.GetStd() << std::endl;
+			int elementId = element.lock()->GetId();
+
+			switch (elementId)
+			{
+				
+			}
 		}
 	}
 }

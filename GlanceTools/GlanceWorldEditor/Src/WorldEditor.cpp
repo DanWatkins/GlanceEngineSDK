@@ -42,6 +42,7 @@ namespace ge
 				WeakPtr<ListBox> worldListBox = mRoot->CreateListBox(EID_OPEN_WORLD_LISTBOX, mOpenDialog, Vector2D<int>(10,40), 200, 150);
 				WeakPtr<ButtonCaption> openButton = mRoot->CreateButtonCaption(EID_OPEN_WORLD_BUTTON, mOpenDialog, Vector2D<int>(220,40), 70, 24, "Open");
 				openButton.lock()->AddElementListener(this);
+				mOpenDialog.lock()->AddElementListener(this);
 
 			io::DirectoryListing worldListing = io::GetFilesInDirectory(DIR_WORLDS, ".world");
 			io::DirectoryListing::iterator iter = worldListing.begin();

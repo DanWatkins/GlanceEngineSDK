@@ -5,7 +5,9 @@ This is a log of everything (most of what happended, the main point) added, chan
 
 ---------------------------------------------------------------------------------------------------
  ###### v0.3.0 (April 23, 2013 - present)
- 
+
+TabBar now reports to element listeners when pages appear and dissapear (5/1/2013)
+Element now report to element listeners when they are removed (5/1/2013)
 ComboBox and ListBox now properly send messages to listeners (4/30/2013)
 CheckBox and Slider now properly send messages to listeners (4/30/2013)
 Added sendMessageToListener calls in the buttons, checkbox, edit box, slider, and scroll bar (4/29/2013)

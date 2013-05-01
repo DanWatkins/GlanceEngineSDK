@@ -92,7 +92,10 @@ namespace ge
 			UNCHECKED = State::UNCHECKED,
 			SELECTED,
 			DESElECTED,
-			VALUE_CHANGED
+			VALUE_CHANGED,
+			REMOVED,
+			PAGE_APPEARED,
+			PAGE_DISAPEARED
 		};
 	};
 };

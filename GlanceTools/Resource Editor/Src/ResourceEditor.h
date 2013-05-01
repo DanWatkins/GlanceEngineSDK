@@ -17,13 +17,15 @@ namespace ge
 		-- Main editor class. Facilitates managment of the entire application and all
 		   sub-editors such as EntityEditor and GraphicsEditor.
 		=============================================================================*/
-		class ResourceEditor : public Editor
+		class ResourceEditor : public Editor, public ElementListener
 		{
 		private:
 			SharedPtr<EntityEditor> mEntityEditor;
 
 		public:
 			ResourceEditor(gui::Root *root) { SetRoot(root); }
+
+			void SendElementMessage(ElementEvent elementEvent, WeakPtr<Element> element, String eventParam);
 
 			void CreateUserInterface();
 			bool LoadContent();
