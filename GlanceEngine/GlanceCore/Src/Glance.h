@@ -29,8 +29,7 @@ namespace ge
 	/*=============================================================================
 	-- Version infromation.
 	=============================================================================*/
-	const String gEngineVersion = "0.3.0";
-	const String gSDKVersion = "0.3.0";
+	const String gSDKVersion = "0.3.x";
 };
 
 

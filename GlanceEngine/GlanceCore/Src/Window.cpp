@@ -16,7 +16,7 @@ namespace ge
 		mVideoSettings.height		= 600;
 		mVideoSettings.fullscreen	= false;
 		mVideoSettings.verticalSync	= true;
-		mVideoSettings.title		= String("GlanceEngine ")+gEngineVersion+" - (C) 2011-2013 Daniel L. Watkins";
+		mVideoSettings.title		= String("GlanceEngineSDK ")+gSDKVersion+" - (C) 2011-2013 Daniel L. Watkins";
 		mLastVideoSettings			= mVideoSettings;
 
 		mQuit						= false;

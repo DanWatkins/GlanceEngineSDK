@@ -130,6 +130,8 @@ namespace ge
 #define GUI_CARET_DELAY						400  //milliseconds
 
 
+const ge::String GUI_CONSOLE_NO_COMMAND_PREFIX = ";";	//can only be one character!!!!
+
 #include "Element.h"
 #include "ElementListener.h"
 
