@@ -18,7 +18,7 @@ SharedPtr<Console> console;
 int main()
 {
 	VideoSettings *videoSettings = app.GetVideoSettings();
-	videoSettings->title = String()+"Glance Resource Editor "+gre::GetVersionText()+" - (GE: "+gEngineVersion+")";
+	videoSettings->title = String()+"Glance Resource Editor "+gre::GetVersionText()+" - (GE: "+gSDKVersion+")";
 	videoSettings->verticalSync = true;
 	videoSettings->allowResize = true;
 
@@ -76,4 +76,6 @@ void ge::ClientLoop()
 	root.Update();
 	root.Draw();
 	console->Draw();
+
+
 }

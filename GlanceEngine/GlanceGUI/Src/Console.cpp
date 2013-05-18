@@ -64,6 +64,32 @@ namespace ge
 			{
 				Print(mInputLine, gWhite);
 
+				if (mInputLine.Size() > 0  &&  mInputLine[0] != GUI_CONSOLE_NO_COMMAND_PREFIX)
+				{
+					//parse @mInputLine as a command
+					ConsoleCommand command;
+					String buffer;
+
+					for (int n=0; n<mInputLine.Size(); n++)
+					{
+						if (mInputLine[n] != " ")
+							buffer.PushBack(mInputLine[n]);
+						else
+						{
+							if (command.command == "")
+								command.command = buffer;
+							else
+								command.parameters.push_back(buffer);
+
+							buffer.Clear();
+						}
+					}
+
+					command.parameters.push_back(buffer);
+					mQueuedCommands.push_back(command);
+					Print(ToString("   ")+GUI_CONSOLE_NO_COMMAND_PREFIX+"Command \""+command.command+"\" was parsed",gYellow);
+				}
+
 				mInputLine = "";
 			}
 		}
