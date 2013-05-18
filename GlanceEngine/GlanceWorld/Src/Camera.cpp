@@ -32,6 +32,11 @@ namespace ge
         {
 			if (mWorld)
 				mWorld->GetMap()->GetTileset()->GetImage()->SetWindow(mWindow);
+			else
+			{
+				gDebug.Error("Bad World object. Cannot draw!", __FUNCTION__);
+				return;
+			}
 
 			//center the camera on the target if it is valid
 			if (!mTarget.expired())

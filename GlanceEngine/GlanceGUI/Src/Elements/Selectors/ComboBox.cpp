@@ -64,7 +64,7 @@ namespace ge
 			if (mDropDownButton.lock()->GetState() == State::RELEASED)
 				ShowListBox(!GetShowingListBox());
 			//there was a click outside the box or a selection was made
-			else if (mMblJustPressed  &&  mMblJustPressed)
+			else if (mMblJustPressed)
 			{
 				Rect<int> dropButtonRect = Rect<int>(mDropDownButton.lock()->GetScreenPos().x, mDropDownButton.lock()->GetScreenPos().y,
 											 mDropDownButton.lock()->GetWidth(), mDropDownButton.lock()->GetHeight());

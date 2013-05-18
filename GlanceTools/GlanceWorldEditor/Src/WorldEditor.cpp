@@ -19,14 +19,16 @@ namespace ge
 
 			if (!mRoot)
 				gDebug.Error(String()+"Bad root object. Cannot create user interface for WorldEditor instance "+ToString(this));
-
-			//create the main menu bar
-			WeakPtr<MenuBar> menuBar = mRoot->CreateMenuBar(gwe::EID_MENU_BAR_MAIN, -1, Vector2D<int>(), mRoot->GetWindow()->GetWidth());
-				mFileMenu = menuBar.lock()->AddMenu("File");
-					 mFileMenu.lock()->AddItem("Open");
-					mFileMenu.lock()->AddItem("Exit");
-				WeakPtr<ContextMenu> cm2 = menuBar.lock()->AddMenu("Help");
-					cm2.lock()->AddItem("About");
+			else
+			{
+				//create the main menu bar
+				WeakPtr<MenuBar> menuBar = mRoot->CreateMenuBar(gwe::EID_MENU_BAR_MAIN, -1, Vector2D<int>(), mRoot->GetWindow()->GetWidth());
+					mFileMenu = menuBar.lock()->AddMenu("File");
+						 mFileMenu.lock()->AddItem("Open");
+						mFileMenu.lock()->AddItem("Exit");
+					WeakPtr<ContextMenu> cm2 = menuBar.lock()->AddMenu("Help");
+						cm2.lock()->AddItem("About");
+			}
 		}
 
 

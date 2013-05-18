@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GlanceAsset", "..\..\GlanceEngine\GlanceAsset\IDE\MSVC11\GlanceAsset.vcxproj", "{513846C0-2EDC-4D37-92B0-E7F34E2EB07B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GlanceAudio", "..\..\GlanceEngine\GlanceAudio\IDE\MSVC11\GlanceAudio.vcxproj", "{EFBF2EC1-9022-4F84-97FA-132289F4638B}"
@@ -32,7 +32,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Testbed", "..\..\GlanceTool
 		{353EF2FE-C431-44CB-9213-BF75C6CFDCB6} = {353EF2FE-C431-44CB-9213-BF75C6CFDCB6}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Resource Editor", "..\..\GlanceTools\Resource Editor\IDE\MSVC11\Resource Editor.vcxproj", "{24E89154-2EB1-44D9-A6DF-BA8769729B10}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GlanceResourceEditor", "..\..\GlanceTools\Resource Editor\IDE\MSVC11\Resource Editor.vcxproj", "{24E89154-2EB1-44D9-A6DF-BA8769729B10}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C6683F0B-702E-4965-86ED-0EDC72DD8605} = {C6683F0B-702E-4965-86ED-0EDC72DD8605}
 		{C18D5926-BCDF-4F69-8DB4-E76DCB1CBE59} = {C18D5926-BCDF-4F69-8DB4-E76DCB1CBE59}
